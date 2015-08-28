@@ -1,0 +1,39 @@
+{
+  "name": "skeltonframework",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/SkeletonFramework/SkeletonFramework#readme",
+  "description": "A simple responsive framework for mobile friendly development.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Benjamin Hinchley <benjaminhinchley@gmail.com> (http://benjaminhinchley.com)"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://benhinchley@github.com/SkeletonFramework/SkeletonFramework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SkeletonFramework/SkeletonFramework/issues"
+  },
+  "keywords": [
+    "skeleton",
+    "framework",
+    "skeleton",
+    "css",
+    "framework"
+  ],
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.0",
+    "gulp": "^3.9.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-if": "^1.2.5",
+    "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.2",
+    "postcss": "^5.0.2",
+    "postcss-calc": "^5.0.0",
+    "postcss-custom-properties": "^5.0.0"
+  }
+}
