@@ -4,6 +4,19 @@ var postcss = require('gulp-postcss')
 var cssmin = require('gulp-cssmin')
 var rename = require('gulp-rename')
 
+var header = require('gulp-header')
+var moment = require('moment')
+var pkg = require('./package.json')
+
+var banner = ['/*!',
+  ' Skeleton Framework',
+  ' | v<%= pkg.version %>',
+  ' | <%= pkg.license %>',
+  ' | '+ moment().format("MMM Do, YYYY"),
+  ' */',
+  '\n \n'
+].join('')
+
 var paths = {
   css: {
     src: './src/skeleton.css',
@@ -23,6 +36,7 @@ var processors = [
 var buildTask = function(options) {
   return gulp.src(options.src)
     .pipe(postcss(processors))
+    .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest(options.dest))
     .pipe(gulp.dest(options.examples))
     .pipe(gulpif(options.minify, rename({
@@ -42,7 +56,7 @@ gulp.task('dev', function() {
   })
 })
 
-gulp.task('watch', function () {
+gulp.task('watch', function() {
   gulp.watch(paths.css.watch, ['dev'])
 })
 
