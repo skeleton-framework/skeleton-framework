@@ -1,0 +1,100 @@
+.container {
+  margin: 0 auto;
+  width: 94%;
+  max-width: 1240px;
+}
+
+.row {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+
+.row::before,
+.row::after { content: " "; display: table; }
+.row::after { clear: both; }
+
+.column,
+.columns {
+  float: left;
+  width: calc(100% - 1em);
+  min-height: 1px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.row ~ .row,
+.column ~ .column,
+.columns ~ .column,
+.column ~ .columns,
+.columns ~ .columns { margin-top: 1em; }
+
+@media (min-width: 35em) {
+  .column ~ .column,
+  .columns ~ .column,
+  .column ~ .columns,
+  .columns ~ .columns { margin-top: 0; }
+
+  .one.column,
+  .one.columns          { width: calc(((100%/12) * 1) - 1em); }
+  .two.column,
+  .two.columns          { width: calc(((100% / 12) * 2) - 1em); }
+  .three.column,
+  .three.columns,
+  .one-quarter.column,
+  .one-quarter.columns  { width: calc(((100% / 12) * 3) - 1em); }
+  .four.column,
+  .four.columns,
+  .one-third.column,
+  .one-third.columns    { width: calc(((100% / 12) * 4) - 1em); }
+  .five.column,
+  .five.columns         { width: calc(((100% / 12) * 5) - 1em); }
+  .six.column,
+  .six.columns,
+  .one-half.column,
+  .one-half.columns     { width: calc(((100% / 12) * 6) - 1em); }
+  .seven.column,
+  .seven.columns        { width: calc(((100% / 12) * 7) - 1em); }
+  .eight.column,
+  .eight.columns,
+  .two-thirds.column,
+  .two-thirds.columns   { width: calc(((100% / 12) * 8) - 1em); }
+  .nine.column,
+  .nine.columns         { width: calc(((100% / 12) * 9) - 1em); }
+  .ten.column,
+  .ten.columns          { width: calc(((100% / 12) * 10) - 1em); }
+  .eleven.column,
+  .eleven.columns       { width: calc(((100% / 12) * 11) - 1em); }
+  .twelve.column,
+  .twelve.columns       { width: calc(((100% / 12) * 12) - 1em); }
+
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: calc(((100% / 12) * 1) + 0.5em); }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: calc(((100% / 12) * 2) + 0.5em); }
+  .offset-by-three.column,
+  .offset-by-three.columns,
+  .offset-by-one-quarter.column,
+  .offset-by-one-quarter.columns  { margin-left: calc(((100% / 12) * 3) + 0.5em); }
+  .offset-by-four.column,
+  .offset-by-four.columns,
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: calc(((100% / 12) * 4) + 0.5em); }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: calc(((100% / 12) * 5) + 0.5em); }
+  .offset-by-six.column,
+  .offset-by-six.columns,
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: calc(((100% / 12) * 6) + 0.5em); }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: calc(((100% / 12) * 7) + 0.5em); }
+  .offset-by-eight.column,
+  .offset-by-eight.columns,
+  .offset-two-thirds.column,
+  .offset-two-thirds.columns      { margin-left: calc(((100% / 12) * 8) + 0.5em); }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: calc(((100% / 12) * 9) + 0.5em); }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: calc(((100% / 12) * 10) + 0.5em); }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: calc(((100% / 12) * 11) + 0.5em); }
+}
