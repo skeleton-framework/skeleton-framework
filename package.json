@@ -21,9 +21,7 @@
   "keywords": [
     "skeleton",
     "framework",
-    "skeleton",
-    "css",
-    "framework"
+    "css"
   ],
   "devDependencies": {
     "autoprefixer-core": "^5.2.0",
@@ -32,6 +30,7 @@
     "gulp-if": "^1.2.5",
     "gulp-postcss": "^5.1.9",
     "gulp-rename": "^1.2.2",
+    "gulp-header": "^1.7.1",
     "postcss": "^4.1.13",
     "postcss-calc": "^4.1.0",
     "postcss-custom-properties": "^4.0.0",
