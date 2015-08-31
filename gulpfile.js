@@ -36,7 +36,7 @@ var processors = [
 var buildTask = function(options) {
   return gulp.src(options.src)
     .pipe(postcss(processors))
-    .pipe(header(banner, { pkg : pkg } ))
+    .pipe(gulpif(options.banner, header(banner, { pkg : pkg } )))
     .pipe(gulp.dest(options.dest))
     .pipe(gulp.dest(options.examples))
     .pipe(gulpif(options.minify, rename({
@@ -50,6 +50,7 @@ var buildTask = function(options) {
 gulp.task('dev', function() {
   buildTask({
     src: paths.css.src,
+    banner: false,
     minify: false,
     dest: paths.css.dest,
     examples: paths.css.examples
@@ -63,6 +64,7 @@ gulp.task('watch', function() {
 gulp.task('prod', function() {
   buildTask({
     src: paths.css.src,
+    banner: true,
     minify: true,
     cssmin: {
       advanced: true,
