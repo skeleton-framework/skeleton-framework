@@ -22,7 +22,7 @@ var paths = {
     src: './src/skeleton.css',
     dest: './dist',
     examples: './examples/css',
-    watch: './src/skeleton.css'
+    watch: './src/*.css'
   }
 }
 
