@@ -171,21 +171,9 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
-
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-  width: 100%; }
-
-.u-max-full-width {
-  max-width: 100%; }
-
-.u-pull-right {
-  float: right; }
-
-.u-pull-left {
-  float: left; }
-
+@import "_utils.css";
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -201,8 +189,7 @@ hr {
 
 /* Self Clearing Goodness */
 .container:after,
-.row:after,
-.u-cf {
+.row:after {
   content: "";
   display: table;
   clear: both; }

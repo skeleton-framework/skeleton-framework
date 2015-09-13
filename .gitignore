@@ -1,5 +1,9 @@
 # Created by https://www.gitignore.io/api/osx,node,bower,windows,webstorm
 
+# This project
+dist
+examples
+
 ### OSX ###
 .DS_Store
 .AppleDouble
