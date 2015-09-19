@@ -21,8 +21,18 @@ var paths = {
   css: {
     src: './src/skeleton.css',
     dest: './dist',
-    examples: './examples/css',
+    dev: './dev/css',
     watch: './src/*.css'
+  },
+  html: {
+    src: './src/test.html',
+    dest: './',
+    dev: './dev/'
+  },
+  images: {
+    src: './src/favicon.png',
+    dest: './images',
+    dev: './dev/images'
   }
 }
 
@@ -38,13 +48,21 @@ var buildTask = function(options) {
     .pipe(postcss(processors))
     .pipe(gulpif(options.banner, header(banner, { pkg : pkg } )))
     .pipe(gulp.dest(options.dest))
-    .pipe(gulp.dest(options.examples))
     .pipe(gulpif(options.minify, rename({
       extname: ".min.css"
     })))
     .pipe(gulpif(options.minify, cssmin(options.cssmin)))
     .pipe(gulpif(options.minify, gulp.dest(options.dest)))
-    .pipe(gulpif(options.minify, gulp.dest(options.examples)))
+}
+
+var copyHTML = function(options) {
+  return gulp.src(options.src)
+    .pipe(gulp.dest(options.dest))
+}
+
+var copyImages = function(options) {
+  return gulp.src(options.src)
+    .pipe(gulp.dest(options.dest))
 }
 
 gulp.task('dev', function() {
@@ -52,8 +70,15 @@ gulp.task('dev', function() {
     src: paths.css.src,
     banner: false,
     minify: false,
-    dest: paths.css.dest,
-    examples: paths.css.examples
+    dest: paths.css.dev,
+  }),
+  copyHTML({
+    src: paths.html.src,
+    dest: paths.html.dev
+  }),
+  copyImages({
+    src: paths.images.src,
+    dest: paths.images.dev
   })
 })
 
@@ -78,6 +103,13 @@ gulp.task('prod', function() {
       shorthandCompacting: false
     },
     dest: paths.css.dest,
-    examples: paths.css.examples
+  }),
+  copyHTML({
+    src: paths.html.src,
+    dest: paths.html.dest
+  }),
+  copyImages({
+    src: paths.images.src,
+    dest: paths.images.dest
   })
 })
