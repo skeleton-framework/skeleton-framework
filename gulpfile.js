@@ -20,20 +20,18 @@ var banner = ['/*!',
 var paths = {
   css: {
     src: './src/skeleton.css',
-    dest: './dist',
-    dev: './dev/css',
-    watch: './src/*.css'
+    dist: './dist',
+    dev: './dev/css'
   },
   html: {
     src: './src/test.html',
-    dest: './',
     dev: './dev/'
   },
   images: {
     src: './src/favicon.png',
-    dest: './images',
     dev: './dev/images'
-  }
+  },
+  watch: './src/*'
 }
 
 var processors = [
@@ -83,7 +81,7 @@ gulp.task('dev', function() {
 })
 
 gulp.task('watch', function() {
-  gulp.watch(paths.css.watch, ['dev'])
+  gulp.watch(paths.watch, ['dev'])
 })
 
 gulp.task('prod', function() {
@@ -102,14 +100,6 @@ gulp.task('prod', function() {
       roundingPrecision: 10,
       shorthandCompacting: false
     },
-    dest: paths.css.dest,
-  }),
-  copyHTML({
-    src: paths.html.src,
-    dest: paths.html.dest
-  }),
-  copyImages({
-    src: paths.images.src,
-    dest: paths.images.dest
+    dest: paths.css.dist,
   })
 })
