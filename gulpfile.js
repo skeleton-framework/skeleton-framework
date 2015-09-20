@@ -24,11 +24,11 @@ var paths = {
     dev: './dev/css'
   },
   html: {
-    src: './src/test.html',
+    src: './src/example/test.html',
     dev: './dev/'
   },
   images: {
-    src: './src/favicon.png',
+    src: './src/example/favicon.png',
     dev: './dev/images'
   },
   watch: './src/*'
@@ -37,7 +37,9 @@ var paths = {
 var processors = [
   require('postcss-import')(),
   require('postcss-custom-properties')(),
-  require('postcss-calc')(),
+  require('postcss-calc')({
+    precision: 10
+  }),
   require('autoprefixer-core')()
 ]
 
