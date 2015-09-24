@@ -55,6 +55,10 @@
 .xs-eleven[class*='column']       { width: calc((var(--column-width) * 11) - var(--gutter)); }
 .xs-twelve[class*='column']       { width: calc((var(--column-width) * 12) - var(--gutter)); }
 
+[class*='xs-'][class*='column'] ~ [class*='xs-'][class*='column'] {
+  margin-top: 0;
+}
+
 @media screen and (min-width: 35em) {
   [class*='column'] ~ [class*='column'] {
     margin-top: 0;
