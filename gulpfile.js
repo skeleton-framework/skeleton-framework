@@ -31,7 +31,7 @@ var paths = {
     src: './src/example/favicon.png',
     dev: './dev/images'
   },
-  watch: './src/*'
+  watch: './src/**/*'
 }
 
 var processors = [
