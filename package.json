@@ -12,7 +12,8 @@
     "dev": "gulp dev",
     "prewatch": "gulp dev",
     "watch": "gulp watch",
-    "build": "gulp prod"
+    "build": "gulp prod",
+    "version": "npm run build && git add -A dist"
   },
   "repository": {
     "type": "git",
