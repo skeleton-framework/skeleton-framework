@@ -45,7 +45,7 @@
 }
 
 .xs-one[class*='column'] {
-  width: var(--column-width) * 1 - var(--gutter);
+  width: calc(--column-width) * 1 - var(--gutter);
 }
 
 .xs-two[class*='column'] {
