@@ -1,5 +1,4 @@
 /* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
 - Base Styles
 - Typography
@@ -16,97 +15,96 @@
 */
 
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_grid.css";
+/* Base Styles */
 
+@import "css/_base.css";
 
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_base.css";
+/* Grid */
 
+@import "css/_grid.css";
 
-/* Typography and Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_typography.css";
+/* Typography and Links */
 
+@import "css/_typography.css";
 
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_buttons.css";
+/* Buttons */
 
+@import "css/_buttons.css";
 
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_forms.css";
+/* Forms */
 
+@import "css/_forms.css";
 
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_lists.css";
+/* Lists */
 
+@import "css/_lists.css";
 
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_code.css";
+/* Code */
 
+@import "css/_code.css";
 
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_tables.css";
+/* Tables */
 
+@import "css/_tables.css";
 
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_spacing.css";
+/* Spacing */
 
+@import "css/_spacing.css";
 
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import "skeleton/_utils.css";
+/* Utilities */
 
+@import "css/_utils.css";
 
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Misc */
+
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid #E1E1E1;
+}
 
 
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Clearing */
 
-/* Self Clearing Goodness */
+
 .container:after,
 .row:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
+/* Media Queries */
+
+
+/* Note: The best way to structure the use of media queries is to create the
+   queries near the relevant code. For example, if you wanted to change the
+   styles for buttons on small devices, paste the mobile query code up in the
+   buttons section and style it there. */
 
 
 /* Larger than mobile */
+
 @media (min-width: 400px) {}
 
+
 /* Larger than phablet (also point when grid becomes active) */
+
 @media (min-width: 550px) {}
 
+
 /* Larger than tablet */
+
 @media (min-width: 750px) {}
 
+
 /* Larger than desktop */
+
 @media (min-width: 1000px) {}
 
+
 /* Larger than Desktop HD */
+
 @media (min-width: 1200px) {}
