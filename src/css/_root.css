@@ -1,0 +1,6 @@
+:root {
+  --total-columns: 12;
+  --column-width: calc(100% / var(--total-columns));
+  --max-width: 1240px;
+  --gutter: 1em;
+}

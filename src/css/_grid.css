@@ -1,10 +1,3 @@
-:root {
-  --total-columns: 12;
-  --column-width: calc(100% / var(--total-columns));
-  --max-width: 1240px;
-  --gutter: 1em;
-}
-
 .container {
   margin: 0 auto;
   width: calc(100% - var(--gutter));
@@ -45,7 +38,7 @@
 }
 
 .xs-one[class*='column'] {
-  width: calc(--column-width) * 1 - var(--gutter);
+  width: calc((var(--column-width) * 1) - var(--gutter));
 }
 
 .xs-two[class*='column'] {
