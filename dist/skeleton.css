@@ -1,4 +1,4 @@
-/*! Skeleton Framework | v1.0.1 | MIT | Nov 30th, 2015 */
+/*! Skeleton Framework | v1.0.2 | MIT | Dec 5th, 2015 */
  
 /* Table of contents
 - Grid
@@ -16,6 +16,7 @@
 - Media Queries
 */
 
+/* Root Variables */
 
 /* Base Styles */
 
@@ -44,7 +45,7 @@ body {
 .container {
   margin: 0 auto;
   width: calc(100% - 1em);
-  max-width: 1240px;
+  max-width: 1200px;
 }
 
 .container .container {
@@ -81,7 +82,7 @@ body {
 }
 
 .xs-one[class*='column'] {
-  width: 8.33333333% * 1 - 1em;
+  width: calc(8.33333333% - 1em);
 }
 
 .xs-two[class*='column'] {
@@ -893,7 +894,6 @@ form {
   top: 50%;
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
-      -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
 }
 
