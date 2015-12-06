@@ -107,3 +107,5 @@ gulp.task('prod', function() {
     dest: paths.css.dist,
   })
 })
+
+gulp.task('default', ['dev', 'watch'])
