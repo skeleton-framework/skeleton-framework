@@ -15,7 +15,7 @@ var banner = ['/*!',
   ' | '+ moment().format("MMM Do, YYYY"),
   ' */',
   '\n \n'
-  ].join('')
+].join('')
 
 var paths = {
   css: {
@@ -47,6 +47,7 @@ var buildTask = function(options) {
   return gulp.src(options.src)
     .pipe(postcss(processors))
     .pipe(gulpif(options.banner, header(banner, { pkg : pkg } )))
+    .pipe(gulpif(options.pkgname, rename({ basename: pkg.name })))
     .pipe(gulp.dest(options.dest))
     .pipe(gulpif(options.minify, rename({
       extname: ".min.css"
@@ -79,8 +80,8 @@ gulp.task('dev', function() {
   copyImages({
     src: paths.images.src,
     dest: paths.images.dev
-  });
-});
+  })
+})
 
 gulp.task('watch', function() {
   gulp.watch(paths.watch, ['dev'])
@@ -91,6 +92,7 @@ gulp.task('prod', function() {
     src: paths.css.src,
     banner: true,
     minify: true,
+    pkgname: false,
     cssmin: {
       advanced: true,
       aggressiveMerging: true,
@@ -105,3 +107,5 @@ gulp.task('prod', function() {
     dest: paths.css.dist,
   })
 })
+
+gulp.task('default', ['dev', 'watch'])
