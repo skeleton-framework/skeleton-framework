@@ -4,9 +4,11 @@
   "license": "MIT",
   "homepage": "https://github.com/SkeletonFramework/SkeletonFramework#readme",
   "description": "A simple responsive framework for mobile friendly development.",
-  "authors": [
-    "Benjamin Hinchley <benjaminhinchley@gmail.com>",
+  "author": [
     "Gary DeLaney <gld1982ltd@gmail.com>"
+  ],
+  "contributors": [
+    "Benjamin Hinchley <benjaminhinchley@gmail.com>"
   ],
   "scripts": {
     "dev": "gulp dev",
