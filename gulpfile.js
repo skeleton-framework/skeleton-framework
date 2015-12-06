@@ -24,11 +24,11 @@ var paths = {
     dev: './dev/css'
   },
   html: {
-    src: './src/example/test.html',
+    src: './src/test.html',
     dev: './dev/'
   },
   images: {
-    src: './src/example/favicon.png',
+    src: './src/images/favicon.png',
     dev: './dev/images'
   },
   watch: './src/**/*'
@@ -47,6 +47,7 @@ var buildTask = function(options) {
   return gulp.src(options.src)
     .pipe(postcss(processors))
     .pipe(gulpif(options.banner, header(banner, { pkg : pkg } )))
+    .pipe(gulpif(options.pkgname, rename({ basename: pkg.name })))
     .pipe(gulp.dest(options.dest))
     .pipe(gulpif(options.minify, rename({
       extname: ".min.css"
@@ -71,11 +72,11 @@ gulp.task('dev', function() {
     banner: false,
     minify: false,
     dest: paths.css.dev,
-  }),
+  })
   copyHTML({
     src: paths.html.src,
     dest: paths.html.dev
-  }),
+  })
   copyImages({
     src: paths.images.src,
     dest: paths.images.dev
@@ -91,6 +92,7 @@ gulp.task('prod', function() {
     src: paths.css.src,
     banner: true,
     minify: true,
+    pkgname: false,
     cssmin: {
       advanced: true,
       aggressiveMerging: true,
@@ -105,3 +107,5 @@ gulp.task('prod', function() {
     dest: paths.css.dist,
   })
 })
+
+gulp.task('default', ['dev', 'watch'])

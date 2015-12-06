@@ -1,18 +1,18 @@
 {
   "name": "skeletonframework",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "homepage": "https://github.com/SkeletonFramework/SkeletonFramework#readme",
   "description": "A simple responsive framework for mobile friendly development.",
-  "authors": [
-    "Benjamin Hinchley <benjaminhinchley@gmail.com>",
-    "Gary DeLaney <gld1982ltd@gmail.com>"
+  "author": [
+    "Gary DeLaney <gld1982ltd@gmail.com>",
+    "Benjamin Hinchley <benjaminhinchley@gmail.com>"
   ],
   "scripts": {
     "dev": "gulp dev",
     "prewatch": "gulp dev",
     "watch": "gulp watch",
-    "build": "gulp prod"
+    "prod": "gulp prod"
   },
   "repository": {
     "type": "git",
