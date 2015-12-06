@@ -12,7 +12,7 @@
     "dev": "gulp dev",
     "prewatch": "gulp dev",
     "watch": "gulp watch",
-    "build": "gulp prod"
+    "prod": "gulp prod"
   },
   "repository": {
     "type": "git",

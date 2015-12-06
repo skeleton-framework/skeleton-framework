@@ -44,10 +44,10 @@ Install development dependencies by running the command `npm install` in the pro
 
 If you don't have a global install of gulp you may use npm to run the build tasks.
 * `npm run dev` - Creates a development build of Skeleton Framework.
-* `npm run watch` - This watches the src file `src/skeleton.css` and runs `gulp dev` on file change.
-* `npm run build` - This creates the production ready, minified and non-minified versions of Skeleton Framework.
+* `npm run watch` - Watches the src file `src/skeleton.css` and runs `gulp dev` on file change.
+* `npm run prod` - Creates the production ready, minified and non-minified versions of Skeleton Framework.
 
 If you have a global install of gulp you may use either npm as described above, or you may use gulp. (you will get more debug info from gulp)
 * `gulp dev` - Creates a development build of Skeleton Framework.
-* `gulp watch` - This watches the src file `src/skeleton.css` and runs `gulp dev` on file change.
-* `gulp prod` - This creates the production ready, minified and non-minified versions of Skeleton Framework.
+* `gulp watch` - Watches the source files and runs `gulp dev` on file change.
+* `gulp prod` - Creates the production ready, minified and non-minified versions of Skeleton Framework.
