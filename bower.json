@@ -1,5 +1,6 @@
 {
   "name": "skeletonframework",
+  "version": "1.0.2",
   "description": "A simple responsive framework for mobile friendly development.",
   "authors": [
     "Gary DeLaney <gld1982ltd@gmail.com>",
