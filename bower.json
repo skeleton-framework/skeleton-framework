@@ -8,18 +8,19 @@
   ],
   "license": "MIT",
   "keywords": [
-    "skeleton",
+    "css",
     "framework",
-    "css"
+    "skeleton",
+    "skeletonframework"
   ],
-  "homepage": "https://github.com/gld1982ltd/SkeletonFramework",
-  "moduleType": [],
+  "homepage": "https://github.com/skeletonframework/skeletonframework",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests",
-    "src"
+    "src",
+    "gulpfile.js",
+    "package.json",
+    "README.md"
   ]
 }
