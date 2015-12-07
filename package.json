@@ -2,7 +2,7 @@
   "name": "skeletonframework",
   "version": "1.0.2",
   "license": "MIT",
-  "homepage": "https://github.com/SkeletonFramework/SkeletonFramework#readme",
+  "homepage": "https://github.com/skeletonframework/skeletonframework#readme",
   "description": "A simple responsive framework for mobile friendly development.",
   "author": [
     "Gary DeLaney <gld1982ltd@gmail.com>",
@@ -16,15 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SkeletonFramework/SkeletonFramework.git"
+    "url": "https://github.com/skeletonframework/skeletonframework.git"
   },
   "bugs": {
-    "url": "https://github.com/SkeletonFramework/SkeletonFramework/issues"
+    "url": "https://github.com/skeletonframework/skeletonframework/issues"
   },
   "keywords": [
-    "skeleton",
+    "css",
     "framework",
-    "css"
+    "skeleton",
+    "skeletonframework"
   ],
   "devDependencies": {
     "autoprefixer-core": "^5.2.0",
