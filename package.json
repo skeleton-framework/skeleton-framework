@@ -8,6 +8,7 @@
     "Gary DeLaney <gld1982ltd@gmail.com>",
     "Benjamin Hinchley <benjaminhinchley@gmail.com>"
   ],
+  "engines": { "node": ">=4.2.3" },
   "scripts": {
     "dev": "gulp dev",
     "prewatch": "gulp dev",
@@ -29,6 +30,7 @@
   ],
   "devDependencies": {
     "autoprefixer-core": "^5.2.0",
+    "ender": "^2.1.1",
     "gulp": "^3.9.0",
     "gulp-cssmin": "^0.1.7",
     "gulp-header": "^1.7.1",
@@ -40,5 +42,8 @@
     "postcss-calc": "^4.1.0",
     "postcss-custom-properties": "^4.0.0",
     "postcss-import": "^6.0.0"
+  },
+  "dependencies": {
+    "jeesh": "0.0.6"
   }
 }

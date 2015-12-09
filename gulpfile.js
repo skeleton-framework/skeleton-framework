@@ -1,12 +1,15 @@
-var gulp = require('gulp')
-var gulpif = require('gulp-if')
-var postcss = require('gulp-postcss')
-var cssmin = require('gulp-cssmin')
-var rename = require('gulp-rename')
+var fs        = require('fs')
+var exec      = require('child_process').exec
+var gulp      = require('gulp')
+var gulpif    = require('gulp-if')
+var postcss   = require('gulp-postcss')
+var cssmin    = require('gulp-cssmin')
+var rename    = require('gulp-rename')
 
-var header = require('gulp-header')
-var moment = require('moment')
-var pkg = require('./package.json')
+var header    = require('gulp-header')
+var moment    = require('moment')
+var pkg       = require('./package.json')
+
 
 var banner = ['/*!',
   ' Skeleton Framework',
@@ -23,6 +26,11 @@ var paths = {
     dist: './dist',
     dev: './dev/css'
   },
+  js: {
+    devDir: './dev/js',
+    dev: './dev/js/skeleton',
+    dist: './dist/skeleton'
+  },
   html: {
     src: './src/test.html',
     dev: './dev/'
@@ -31,7 +39,7 @@ var paths = {
     src: './src/images/favicon.png',
     dev: './dev/images'
   },
-  watch: './src/**/*'
+  watch: './src/**/*',
 }
 
 var processors = [
@@ -66,6 +74,18 @@ var copyImages = function(options) {
     .pipe(gulp.dest(options.dest))
 }
 
+var buildJS = function buildJS (outPath) {
+  // this command line probably shouldn't be hardcoded
+  // or at least, we may want to consider ways of creating an ender manifest
+  // that the user can write to. ender would pick the manifest up and install
+  // packages form that, just like npm
+  //
+  // or something.  this is a start.
+  var proc = exec(`ender build jeesh --output ${outPath}`)
+  proc.stdout.pipe(process.stdout)
+  proc.stderr.pipe(process.stderr)
+}
+
 gulp.task('dev', function() {
   buildTask({
     src: paths.css.src,
@@ -81,6 +101,19 @@ gulp.task('dev', function() {
     src: paths.images.src,
     dest: paths.images.dev
   })
+
+  try {
+    fs.mkdirSync(paths.js.devDir)
+  } catch (err) {
+    if (err.code === "EEXIST") {
+      // we're cool, dir is alreay there
+      console.log(`mkdir ${paths.js.devDir} # good to go`)
+    } else {
+      throw err // something else is wrong
+    }
+  }
+
+  buildJS(paths.js.dev)
 })
 
 gulp.task('watch', function() {
@@ -106,6 +139,9 @@ gulp.task('prod', function() {
     },
     dest: paths.css.dist,
   })
+
+  // no need to make a special dir here
+  buildJS(paths.js.dist)
 })
 
 gulp.task('default', ['dev', 'watch'])
