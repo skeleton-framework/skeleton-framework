@@ -1,0 +1,8 @@
+{
+  "name": "skeletonframework",
+  "repo": "skeletonframework/skeletonframework",
+  "version": "1.0.3",
+  "styles": ["dist/skeleton.css"],
+  "author": "skeletonframework",
+  "license": "MIT"
+}
