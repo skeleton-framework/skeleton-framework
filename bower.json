@@ -1,0 +1,26 @@
+{
+  "name": "skeletonframework",
+  "description": "A simple responsive framework for mobile friendly development.",
+  "main": "dist/skeleton.css",
+  "authors": [
+    "Gary DeLaney <gld1982ltd@gmail.com>",
+    "Benjamin Hinchley <benjaminhinchley@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "framework",
+    "skeleton",
+    "skeletonframework"
+  ],
+  "homepage": "https://github.com/skeletonframework/skeletonframework",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "gulpfile.js",
+    "package.json",
+    "README.md"
+  ]
+}
