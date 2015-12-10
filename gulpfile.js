@@ -50,7 +50,7 @@ var processors = [
 
 
 function release(options) {
-  return gulp.src(['./component.json', './package.json'])
+  return gulp.src('./package.json')
     .pipe(bump({type: options}))
     .pipe(gulp.dest('./'))
 }
