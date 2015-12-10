@@ -1,7 +1,7 @@
 {
   "name": "skeletonframework",
   "repo": "skeletonframework/skeletonframework",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "styles": [
     "dist/skeleton.css",
     "dist/skeleton.min.css"
