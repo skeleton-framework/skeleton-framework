@@ -16,11 +16,7 @@
   "homepage": "https://github.com/skeletonframework/skeletonframework",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "src",
-    "gulpfile.js",
-    "package.json",
-    "README.md"
+    "**/*",
+    "!dist/*"
   ]
 }

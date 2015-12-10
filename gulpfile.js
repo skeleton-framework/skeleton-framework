@@ -1,16 +1,17 @@
-var gulp = require('gulp')
-var gulpif = require('gulp-if')
-var postcss = require('gulp-postcss')
-var cssmin = require('gulp-cssmin')
-var rename = require('gulp-rename')
-
-var header = require('gulp-header')
-var moment = require('moment')
-var pkg = require('./package.json')
+var gulp = require('gulp'),
+    gulpif = require('gulp-if'),
+    postcss = require('gulp-postcss'),
+    cssmin = require('gulp-cssmin'),
+    rename = require('gulp-rename'),
+    gConn = require("gulp-connect"),
+    bump = require('gulp-bump'),
+    header = require('gulp-header'),
+    moment = require('moment'),
+    pkg = require('./package.json')
 
 var banner = ['/*!',
   ' Skeleton Framework',
-  ' | v<%= pkg.version %>',
+  ' | <%= pkg.version %>',
   ' | <%= pkg.license %>',
   ' | '+ moment().format("MMM Do, YYYY"),
   ' */',
@@ -31,7 +32,10 @@ var paths = {
     src: './src/images/favicon.png',
     dev: './dev/images'
   },
-  watch: './src/**/*'
+  serve: {
+    root: 'dev'
+  },
+  watch: ['src/**/*', 'dev/**/*']
 }
 
 var processors = [
@@ -42,6 +46,18 @@ var processors = [
   }),
   require('autoprefixer-core')()
 ]
+
+
+
+function release(options) {
+  return gulp.src(['./component.json', './package.json'])
+    .pipe(bump({type: options}))
+    .pipe(gulp.dest('./'))
+}
+
+gulp.task('patch', function() { return release('patch'); })
+gulp.task('feature', function() { return release('minor'); })
+gulp.task('release', function() { return release('major'); })
 
 var buildTask = function(options) {
   return gulp.src(options.src)
@@ -83,6 +99,32 @@ gulp.task('dev', function() {
   })
 })
 
+function setLiveReload() {
+  // if we have a RELOAD thing set, use that
+  // otherwise default to false
+  if (process.env.RELOAD) {
+    return process.env.RELOAD === "true" ? true : false
+  } else {
+    return false
+  }
+}
+
+var useLiveReload = setLiveReload()
+
+gulp.task("serve", function () {
+  gConn.server({
+    root: paths.serve.root,
+    port: process.env.PORT || 3000,
+    livereload: useLiveReload
+  })
+})
+
+gulp.task('reload', function () {
+  gulp.src(paths.serve.root) // this just watches the dev dir for changes and hits the reload button
+    .pipe(gConn.reload())
+})
+
+
 gulp.task('watch', function() {
   gulp.watch(paths.watch, ['dev'])
 })
@@ -108,4 +150,4 @@ gulp.task('prod', function() {
   })
 })
 
-gulp.task('default', ['dev', 'watch'])
+gulp.task('default', ['dev', 'watch', 'serve'])
