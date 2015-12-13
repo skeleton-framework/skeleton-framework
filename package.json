@@ -5,8 +5,7 @@
   "homepage": "https://github.com/skeletonframework/skeletonframework#readme",
   "description": "A simple responsive framework for mobile friendly development.",
   "author": [
-    "Gary DeLaney <gld1982ltd@gmail.com>",
-    "Benjamin Hinchley <benjaminhinchley@gmail.com>"
+    "Skeleton Framework"
   ],
   "scripts": {
     "dev": "gulp dev",
@@ -44,6 +43,5 @@
     "postcss-custom-properties": "^4.0.0",
     "postcss-import": "^6.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

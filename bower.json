@@ -15,8 +15,7 @@
   ],
   "homepage": "https://github.com/skeletonframework/skeletonframework",
   "ignore": [
-    "**/.*",
-    "**/*",
+    "*",
     "!dist/*"
   ]
 }
