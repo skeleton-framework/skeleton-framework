@@ -154,7 +154,7 @@ gulp.task('release', function() { return release('major'); })
 // create production ready files
 gulp.task('prod', function() {
   css({
-    src: paths.css.src,
+    src: paths.src.css,
     banner: true,
     minify: true,
     pkgname: false,
