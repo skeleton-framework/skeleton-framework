@@ -1,14 +1,14 @@
 // dependencies
 var gulp = require('gulp'),
-    gulpif = require('gulp-if'),
-    postcss = require('gulp-postcss'),
-    cssmin = require('gulp-cssmin'),
-    rename = require('gulp-rename'),
-    connect = require("gulp-connect"),
-    bump = require('gulp-bump'),
-    header = require('gulp-header'),
-    moment = require('moment'),
-    pkg = require('./package.json')
+  gulpif = require('gulp-if'),
+  postcss = require('gulp-postcss'),
+  minifyCss = require('gulp-minify-css'),
+  rename = require('gulp-rename'),
+  connect = require("gulp-connect"),
+  bump = require('gulp-bump'),
+  header = require('gulp-header'),
+  moment = require('moment'),
+  pkg = require('./package.json')
 
 // define header
 var banner = ['/*!',
@@ -25,20 +25,14 @@ var paths = {
   src: {
     css: 'src/skeleton.css',
     html: 'src/index.html',
-    //js: 'src/skeleton.js',
-    images: 'src/images'
   },
   dev: {
-    css: 'dev/css',
+    css: 'dev',
     html: 'dev',
-    //js: 'dev/js',
-    images: 'dev/images'
   },
   dist: {
-    css: 'dist/css',
+    css: 'dist',
     //html: 'dist',
-    //js: 'dist/js',
-    //images: 'dist/images'
   },
   watch: ["src/**/*", "dev/**/*"],
   serve: {
@@ -53,20 +47,24 @@ var processors = [
   require('postcss-calc')({
     precision: 10
   }),
-  require('autoprefixer-core')()
+  require('autoprefixer')()
 ]
 
 // css build options
 var css = function (options) {
   return gulp.src(options.src)
     .pipe(postcss(processors))
-    .pipe(gulpif(options.banner, header(banner, { pkg : pkg } )))
-    .pipe(gulpif(options.pkgname, rename({ basename: pkg.name })))
+    .pipe(gulpif(options.banner, header(banner, {
+      pkg: pkg
+    })))
+    .pipe(gulpif(options.pkgname, rename({
+      basename: pkg.name
+    })))
     .pipe(gulp.dest(options.dest))
     .pipe(gulpif(options.minify, rename({
       extname: ".min.css"
     })))
-    .pipe(gulpif(options.minify, cssmin(options.cssmin)))
+    .pipe(gulpif(options.minify, minifyCss(options.minifyCss)))
     .pipe(gulpif(options.minify, gulp.dest(options.dest)))
 }
 
@@ -76,20 +74,7 @@ var html = function (options) {
     .pipe(gulp.dest(options.dest))
 }
 
-// image options TODO: optimize images
-var images = function (options) {
-  return gulp.src(options.src)
-    .pipe(gulp.dest(options.dest))
-}
-
-/* javascript build options TODO: minimize js
-var js = function (options) {
-  return gulp.src(options.src)
-    .pipe(gulp.dest(options.dest))
-}
-*/
-
- gulp.task('dev', function() {
+gulp.task('dev', function () {
   css({
     src: paths.src.css,
     banner: false,
@@ -100,21 +85,11 @@ var js = function (options) {
     src: paths.src.html,
     dest: paths.dev.html,
   })
-  /*
-  js({
-    src: paths.src.js,
-    dest: paths.dev.js,
-  })
-  */
-  images({
-    src: paths.src.images,
-    dest: paths.dev.images,
-  })
 })
 
 function setLiveReload() {
   // if we have a RELOAD env variable set, use that otherwise default to false
-    return process.env.RELOAD === "true" ? true : false
+  return process.env.RELOAD === "true" ? true : false
 }
 
 var useLiveReload = setLiveReload()
@@ -134,7 +109,7 @@ gulp.task('reload', function () {
 })
 
 // watch src files
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(paths.watch, ['dev'])
   if (useLiveReload)
     gulp.watch(paths.watch, ['reload'])
@@ -143,22 +118,30 @@ gulp.task('watch', function() {
 // create a new release
 function release(options) {
   return gulp.src('./package.json')
-    .pipe(bump({type: options}))
+    .pipe(bump({
+      type: options
+    }))
     .pipe(gulp.dest('./'))
 }
 
-gulp.task('patch', function() { return release('patch'); })
-gulp.task('feature', function() { return release('minor'); })
-gulp.task('release', function() { return release('major'); })
+gulp.task('patch', function () {
+  return release('patch');
+})
+gulp.task('feature', function () {
+  return release('minor');
+})
+gulp.task('release', function () {
+  return release('major');
+})
 
 // create production ready files
-gulp.task('prod', function() {
+gulp.task('dist', function () {
   css({
     src: paths.src.css,
     banner: true,
     minify: true,
     pkgname: false,
-    cssmin: {
+    minifyCss: {
       advanced: true,
       aggressiveMerging: true,
       benchmark: false,

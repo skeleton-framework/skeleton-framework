@@ -1,5 +1,4 @@
 /* Table of contents
-- Root Document Variables
 - Grid
 - Base Styles
 - Typography
@@ -15,8 +14,13 @@
 - Media Queries
 */
 
-/* Root Document Variables */
-@import "css/_root.css";
+:root {
+  --total-columns: 12;
+  --column-width: calc(100% / var(--total-columns));
+  --max-width: 1200px;
+  --gutter: 1em;
+}
+
 
 /* Base Styles */
 
@@ -69,7 +73,6 @@ hr {
 
 
 /* Clearing */
-
 
 .container:after,
 .row:after {

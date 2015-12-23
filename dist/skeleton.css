@@ -1,7 +1,6 @@
-/*! Skeleton Framework | 1.0.4 | MIT | Dec 10th, 2015 */
- 
+/*! Skeleton Framework | 1.0.5 | MIT | Dec 23rd, 2015 */
+
 /* Table of contents
-- Root Document Variables
 - Grid
 - Base Styles
 - Typography
@@ -17,7 +16,6 @@
 - Media Queries
 */
 
-/* Root Document Variables */
 
 /* Base Styles */
 
@@ -955,7 +953,6 @@ hr {
 
 
 /* Clearing */
-
 
 .container:after,
 .row:after {
