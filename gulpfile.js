@@ -1,16 +1,19 @@
-// dependencies
+/* Configuration Variables */
+
+// Project Dependencies
 var gulp = require('gulp'),
   gulpif = require('gulp-if'),
   postcss = require('gulp-postcss'),
   minifyCss = require('gulp-minify-css'),
+  del = require('del'),
   rename = require('gulp-rename'),
   connect = require("gulp-connect"),
-  bump = require('gulp-bump'),
+  opener = require('opener'),
   header = require('gulp-header'),
   moment = require('moment'),
   pkg = require('./package.json')
 
-// define header
+// License Header
 var banner = ['/*!',
   ' Skeleton Framework',
   ' | <%= pkg.version %>',
@@ -20,27 +23,25 @@ var banner = ['/*!',
   '\n\n'
   ].join('')
 
-// define paths
-var paths = {
-  src: {
-    css: 'src/skeleton.css',
-    html: 'src/index.html',
-  },
-  dev: {
-    css: 'dev',
-    html: 'dev',
-  },
-  dist: {
-    css: 'dist',
-    //html: 'dist',
-  },
-  watch: ["src/**/*", "dev/**/*"],
-  serve: {
-    root: 'dev'
-  }
+
+// Server Config
+var server = {
+  port: 3000,
+  liveReload: true,
 }
 
-// postcss plugins
+// Paths
+var path = {
+  css: "src/skeleton.css",
+  html: "src/index.html",
+  dev: "dev",
+  dist: "dist",
+  watch: "src/**/*",
+  serve: "dev",
+  open: "http://localhost:3000"
+}
+
+// PostCSS Plugins
 var processors = [
   require('postcss-import')(),
   require('postcss-custom-properties')(),
@@ -50,7 +51,12 @@ var processors = [
   require('autoprefixer')()
 ]
 
-// css build options
+// Clean Old Files
+var clean = function (options) {
+  return del('options.clean')
+}
+
+// Build CSS
 var css = function (options) {
   return gulp.src(options.src)
     .pipe(postcss(processors))
@@ -68,76 +74,33 @@ var css = function (options) {
     .pipe(gulpif(options.minify, gulp.dest(options.dest)))
 }
 
-// html build options
+// Build HTML -- We are only copying the test file to the dev dir
 var html = function (options) {
   return gulp.src(options.src)
     .pipe(gulp.dest(options.dest))
 }
 
+/* Build Tasks */
+// create development build
 gulp.task('dev', function () {
+  clean: path.dev,
   css({
-    src: paths.src.css,
+    src: path.css,
     banner: false,
     minify: false,
-    dest: paths.dev.css,
+    dest: path.dev,
   })
   html({
-    src: paths.src.html,
-    dest: paths.dev.html,
+    src: path.html,
+    dest: path.dev,
   })
 })
 
-function setLiveReload() {
-  // if we have a RELOAD env variable set, use that otherwise default to false
-  return process.env.RELOAD === "true" ? true : false
-}
-
-var useLiveReload = setLiveReload()
-
-gulp.task("serve", function () {
-  connect.server({
-    root: paths.serve.root,
-    port: process.env.PORT || 3000,
-    livereload: useLiveReload
-  })
-})
-
-// watches the dev dir for changes and hits the reload button
-gulp.task('reload', function () {
-  gulp.src(paths.serve.root)
-    .pipe(connect.reload())
-})
-
-// watch src files
-gulp.task('watch', function () {
-  gulp.watch(paths.watch, ['dev'])
-  if (useLiveReload)
-    gulp.watch(paths.watch, ['reload'])
-})
-
-// create a new release
-function release(options) {
-  return gulp.src('./package.json')
-    .pipe(bump({
-      type: options
-    }))
-    .pipe(gulp.dest('./'))
-}
-
-gulp.task('patch', function () {
-  return release('patch');
-})
-gulp.task('feature', function () {
-  return release('minor');
-})
-gulp.task('release', function () {
-  return release('major');
-})
-
-// create production ready files
+// create production build
 gulp.task('dist', function () {
+  clean: path.dist,
   css({
-    src: paths.src.css,
+    src: path.css,
     banner: true,
     minify: true,
     pkgname: false,
@@ -152,9 +115,40 @@ gulp.task('dist', function () {
       roundingPrecision: 10,
       shorthandCompacting: false
     },
-    dest: paths.dist.css
+    dest: path.dist
   })
 })
 
-// create a dev build, watch it for changes and serve it on localhost:3000
-gulp.task('default', ['dev', 'watch', 'serve'])
+
+/* Server Tasks*/
+
+// Serve Development Directory
+gulp.task("serve", function () {
+  connect.server({
+    root: path.serve,
+    port: server.port,
+    livereload: server.liveReload
+  })
+})
+
+// Reload Browser On Changes
+gulp.task('reload', function () {
+  gulp.src(path.serve)
+    .pipe(connect.reload())
+})
+
+// Watch Development Directory -- Reload Browser If LiveReload Is Enabled
+gulp.task('watch', function () {
+  gulp.watch(path.watch, ['dev'])
+  if (server.liveReload)
+    gulp.watch(path.watch, ['reload'])
+})
+
+// Open Development Directory In Web Browser
+gulp.task('open', function () {
+  opener(path.open)
+})
+
+/* Default Task */
+// Build Development Version, Watch It For Changes, Serve It, Open It In Web Browser
+gulp.task('default', ['dev', 'watch', 'serve', 'open'])
