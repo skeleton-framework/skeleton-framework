@@ -8,6 +8,7 @@
     "Skeleton Framework"
   ],
   "scripts": {
+    "start": "gulp",
     "dev": "gulp dev",
     "prewatch": "gulp dev",
     "watch": "gulp watch",
