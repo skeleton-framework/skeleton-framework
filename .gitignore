@@ -1,11 +1,12 @@
 /*
 !dist
+!lib
 !src
 !.editorconfig
 !.gitignore
 !.npmignore
 !bower.json
-!gulpfile.js
+!build.js
 !LICENSE
 !package.json
 !README.md

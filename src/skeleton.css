@@ -24,43 +24,43 @@
 
 /* Base Styles */
 
-@import "css/_base.css";
+@import "bones/_base.css";
 
 /* Grid */
 
-@import "css/_grid.css";
+@import "bones/_grid.css";
 
 /* Typography and Links */
 
-@import "css/_typography.css";
+@import "bones/_typography.css";
 
 /* Buttons */
 
-@import "css/_buttons.css";
+@import "bones/_buttons.css";
 
 /* Forms */
 
-@import "css/_forms.css";
+@import "bones/_forms.css";
 
 /* Lists */
 
-@import "css/_lists.css";
+@import "bones/_lists.css";
 
 /* Code */
 
-@import "css/_code.css";
+@import "bones/_code.css";
 
 /* Tables */
 
-@import "css/_tables.css";
+@import "bones/_tables.css";
 
 /* Spacing */
 
-@import "css/_spacing.css";
+@import "bones/_spacing.css";
 
 /* Utilities */
 
-@import "css/_utils.css";
+@import "bones/_utils.css";
 
 /* Misc */
 
