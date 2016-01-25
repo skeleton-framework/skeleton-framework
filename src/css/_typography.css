@@ -51,7 +51,7 @@ h6 {
 
 /* Larger than phablet */
 
-@media (min-width: 550px) {
+@media (min-width: 560px) {
   h1 {
     font-size: 5.0rem;
   }
