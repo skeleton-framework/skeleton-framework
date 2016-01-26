@@ -4,14 +4,14 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
+  height: 2.5rem;
+  padding: 0 1.9rem;
   color: #555;
   text-align: center;
-  font-size: 11px;
+  font-size: 0.7rem;
   font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
