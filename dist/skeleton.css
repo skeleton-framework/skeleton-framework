@@ -1,8 +1,7 @@
-/*! Skeleton Framework | 1.0.5 | MIT | Jan 24th, 2016 */
-
+/*! skeleton-framework | 1.0.5 | MIT | 5/29/2016 */
 /* Table of contents
-- Grid
 - Base Styles
+- Grid
 - Typography
 - Links
 - Buttons
@@ -15,10 +14,6 @@
 - Clearing
 - Media Queries
 */
-
-
-/* Base Styles */
-
 html {
   font-size: 1em;
   box-sizing: border-box;
@@ -37,9 +32,6 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
-
-/* Grid */
-
 .container {
   margin: 0 auto;
   width: calc(100% - 1rem);
@@ -454,9 +446,6 @@ body {
     margin-left: calc(91.6666666663% + 0.5rem);
   }
 }
-
-/* Typography and Links */
-
 /* Base Typo
  ------------------------------------------------- */
 
@@ -546,9 +535,6 @@ a {
 a:hover {
   color: #0FA0CE;
 }
-
-/* Buttons */
-
 .button,
 button,
 input[type="submit"],
@@ -647,9 +633,6 @@ input[type="button"].button-primary:active {
   background-color: #157b9b;
   border-color: #157b9b;
 }
-
-/* Forms */
-
 input[type="email"],
 input[type="number"],
 input[type="date"],
@@ -741,9 +724,6 @@ label > .label-body {
   margin-left: 0.5rem;
   font-weight: normal;
 }
-
-/* Lists */
-
 ul {
   list-style: circle inside;
 }
@@ -769,9 +749,6 @@ ol ul {
 li {
   margin-bottom: 1rem;
 }
-
-/* Code */
-
 code {
   padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
@@ -788,9 +765,6 @@ pre > code {
   white-space: pre;
   overflow: auto;
 }
-
-/* Tables */
-
 table {
   display: block;
   overflow-x: auto;
@@ -813,9 +787,6 @@ th:last-child,
 td:last-child {
   padding-right: 0;
 }
-
-/* Spacing */
-
 button,
 .button {
   margin-bottom: 1rem;
@@ -839,9 +810,6 @@ ol,
 form {
   margin-bottom: 2.5rem;
 }
-
-/* Utilities */
-
 .u-full-width {
   width: 100%;
 }
@@ -941,7 +909,6 @@ form {
   max-width: 100%;
   height: auto;
 }
-
 /* Misc */
 
 hr {
@@ -961,14 +928,14 @@ hr {
   clear: both;
 }
 
-
-/* Media Queries */
-
-
-/* Note: The best way to structure the use of media queries is to create the
-   queries near the relevant code. For example, if you wanted to change the
-   styles for buttons on small devices, paste the mobile query code up in the
-   buttons section and style it there. */
+/*****
+* Media Queries
+*
+* Note: The best way to structure the use of media queries is to create the
+* queries near the relevant code. For example, if you wanted to change the
+* styles for buttons on small devices, paste the mobile query code up in the
+* buttons section and style it there.
+*****/
 
 
 /* Larger than mobile */

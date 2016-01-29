@@ -1,8 +1,8 @@
 {
-  "name": "skeletonframework",
+  "name": "skeleton-framework",
   "version": "1.0.5",
   "license": "MIT",
-  "homepage": "https://github.com/skeletonframework/skeletonframework#readme",
+  "homepage": "https://github.com/skeleton-framework/skeletonframework#readme",
   "description": "A simple responsive framework for mobile friendly development.",
   "author": "Skeleton Framework",
   "contributors": [
@@ -11,25 +11,35 @@
     "Ben Hinchley",
     "Nick Lorenson"
   ],
+  "main": "index.js",
   "scripts": {
-    "start": "node build.js"
+    "start": "npm run watch & npm run serve",
+    "build": "node index",
+    "watch": "npm-scripts-watcher",
+    "serve": "browser-sync start --server 'dist' --files 'dist/*'"
+  },
+  "watch": {
+    "src/**/*.css": [
+      "build"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/skeletonframework/skeletonframework.git"
+    "url": "https://github.com/skeleton-framework/skeletonframework.git"
   },
   "bugs": {
-    "url": "https://github.com/skeletonframework/skeletonframework/issues"
+    "url": "https://github.com/skeleton-framework/skeletonframework/issues"
   },
   "keywords": [
     "css",
     "framework",
     "skeleton",
-    "skeletonframework"
+    "skeleton-framework"
   ],
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "clean-css": "^3.4.9",
+    "npm-scripts-watcher": "^1.0.2",
     "postcss": "^5.0.14",
     "postcss-banner": "^1.1.0",
     "postcss-calc": "^5.2.0",
