@@ -2,6 +2,8 @@
 A simple responsive framework for mobile friendly development. 
 Skeleton Framework takes its roots from [dhg/Skeleton](https://github.com/dhg/Skeleton), and builds upon the same basic principles.
 
+Learn more at [skeletonframework.github.io](http://skeletonframework.github.io/).
+
 ## Usage
 Install the sources into your node app via `npm install --save-dev skeletonframework`.
 
