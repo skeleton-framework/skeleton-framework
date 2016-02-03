@@ -1,4 +1,4 @@
-/*! skeleton-framework | 1.0.5 | MIT | 5/29/2016 */
+/*! skeleton-framework | 1.0.6 | MIT | 2/2/2016 */
 /* Table of contents
 - Base Styles
 - Grid
@@ -26,6 +26,7 @@ html {
 }
 
 body {
+  background-color: #fff;
   font-size: 1rem;
   line-height: 1.6rem;
   font-weight: 400;
@@ -573,12 +574,6 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-.button:disabled {
-  border: 1px solid #E3E3E3;
-  color: #888;
-  cursor: not-allowed;
-}
-
 .button:active,
 button:active,
 input[type="submit"]:active,
@@ -588,14 +583,20 @@ input[type="button"]:active {
   border-color: #222;
 }
 
+.button:disabled {
+  border: 1px solid #E3E3E3;
+  color: #888;
+  cursor: not-allowed;
+}
+
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
+  border: 1px solid #33C3F0;
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0;
 }
 
 .button.button-primary:hover,
@@ -613,6 +614,16 @@ input[type="button"].button-primary:focus {
   border-color: #1EAEDB;
 }
 
+.button.button-primary:active,
+button.button-primary:active,
+input[type="submit"].button-primary:active,
+input[type="reset"].button-primary:active,
+input[type="button"].button-primary:active {
+  color: #FFF;
+  background-color: #157b9b;
+  border-color: #157b9b;
+}
+
 .button.button-primary:disabled,
 button.button-primary:disabled,
 input[type="submit"].button-primary:disabled,
@@ -622,16 +633,6 @@ input[type="button"].button-primary:disabled {
   cursor: not-allowed;
   background-color: #7CD9F8;
   border-color: #7CD9F8;
-}
-
-.button.button-primary:active,
-button.button-primary:active,
-input[type="submit"].button-primary:active,
-input[type="reset"].button-primary:active,
-input[type="button"].button-primary:active {
-  color: #FFF;
-  background-color: #157b9b;
-  border-color: #157b9b;
 }
 input[type="email"],
 input[type="number"],
@@ -644,7 +645,6 @@ input[type="password"],
 textarea,
 select {
   padding: 0.4rem 0.6rem;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #FFF;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
@@ -665,7 +665,6 @@ textarea:not([rows]) {
 
 
 /* Removes awkward default styles on some inputs for iOS */
-
 input[type="email"],
 input[type="number"],
 input[type="date"],

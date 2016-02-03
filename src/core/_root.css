@@ -3,4 +3,52 @@
   --column-width: calc(100% / var(--total-columns));
   --max-width: 1200px;
   --gutter: 1rem;
+
+  --font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --background-color: #fff;
+  --font-color: #222;
+
+  --link-color: #1EAEDB;
+  --link-color-hover: #0FA0CE;
+
+  --button-font-color: #555;
+  --button-font-color-enter: #333;
+  --button-font-color-active: #222;
+  --button-font-color-disabled: #888;
+
+  --button-background-color: transparent;
+
+  --button-border: 1px solid #BBB;
+  --button-border-color-enter: #888;
+  --button-border-color-active: #222;
+  --button-border-disabled: 1px solid #E3E3E3;
+
+  --primary-button-font-color: #FFF;
+  --primary-button-font-color-enter: #FFF;
+  --primary-button-font-color-active: #FFF;
+  --primary-button-font-color-disabled: #FFF;
+
+  --primary-button-background-color: #33C3F0;
+  --primary-button-background-color-enter: #1EAEDB;
+  --primary-button-background-color-active: #157b9b;
+  --primary-button-background-color-disabled: #7CD9F8;
+
+  --primary-button-border: 1px solid #33C3F0;
+  --primary-button-border-color-enter: #1EAEDB;
+  --primary-button-border-color-active: #157b9b;
+  --primary-button-border-color-disabled: #7CD9F8;
+
+  --form-background-color: #FFF;
+  --form-font-color: #222;
+  --form-border: 1px solid #D1D1D1;
+  --form-border-enter: 1px solid #33C3F0;
+
+  --code-background: #F1F1F1;
+  --code-border: 1px solid #E1E1E1;
+
+  --td-border-bottom: 1px solid #E1E1E1;
+
+  --border-radius: 4px;
+  --hr: 1px solid #E1E1E1;
 }
