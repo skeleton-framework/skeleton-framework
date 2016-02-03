@@ -937,26 +937,23 @@ hr {
 *****/
 
 
-/* Larger than mobile */
+@media (min-width: 400px) {
+  /* Larger than mobile */
+}
 
-@media (min-width: 400px) {}
+@media (min-width: 560px) {
+  /* Larger than phablet
+  (also point when grid becomes active) */
+}
 
+@media (min-width: 720px) {
+  /* Larger than tablet */
+}
 
-/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 960px) {
+  /* Larger than desktop */
+}
 
-@media (min-width: 560px) {}
-
-
-/* Larger than tablet */
-
-@media (min-width: 720px) {}
-
-
-/* Larger than desktop */
-
-@media (min-width: 960px) {}
-
-
-/* Larger than Desktop HD */
-
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  /* Larger than Desktop HD */
+}
