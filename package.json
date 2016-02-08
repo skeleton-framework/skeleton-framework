@@ -1,8 +1,8 @@
 {
-  "name": "skeletonframework",
+  "name": "skeleton-framework",
   "version": "1.0.6",
   "license": "MIT",
-  "homepage": "https://github.com/skeletonframework/skeletonframework#readme",
+  "homepage": "https://github.com/skeleton-framework/skeleton-framework#readme",
   "description": "A simple responsive framework for mobile friendly development.",
   "author": [
     "Skeleton Framework"
@@ -16,16 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/skeletonframework/skeletonframework.git"
+    "url": "https://github.com/skeleton-framework/skeleton-framework.git"
   },
   "bugs": {
-    "url": "https://github.com/skeletonframework/skeletonframework/issues"
+    "url": "https://github.com/skeleton-framework/skeleton-framework/issues"
   },
   "keywords": [
     "css",
     "framework",
     "skeleton",
-    "skeletonframework"
+    "skeleton-framework"
   ],
   "devDependencies": {
     "autoprefixer": "^6.2.1",

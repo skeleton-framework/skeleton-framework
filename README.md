@@ -5,12 +5,12 @@ Skeleton Framework takes its roots from [dhg/Skeleton](https://github.com/dhg/Sk
 Learn more at [skeletonframework.github.io](http://skeletonframework.github.io/).
 
 ## Usage
-Install the sources into your node app via `npm install --save-dev skeletonframework`.
+Install the sources into your node app via `npm install skeleton-framework`.
 
-Install the compiled version into your frontend via `bower install skeletonframework`.
+Install the compiled version into your frontend via `bower install skeleton-framework`.
 
-Install the latest development version via `git clone https://github.com/skeletonframework/skeletonframework.git`
+Install the latest development version via `git clone https://github.com/skeleton-framework/skeleton-framework.git`
 
-Contributions are welcome! Develoment docs can be found on the [wiki](https://github.com/skeletonframework/skeletonframework/wiki/Skeleton-Framework-Development)
+Contributions are welcome! Develoment docs can be found on the [wiki](https://github.com/skeleton-framework/skeleton-framework/wiki/Skeleton-Framework-Development)
 
-If you experience bugs or errors, please report it on the [issue tracker](https://github.com/skeletonframework/skeletonframework/issues)
+If you experience bugs or errors, please report it on the [issue tracker](https://github.com/skeleton-framework/skeleton-framework/issues)
