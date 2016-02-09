@@ -7,7 +7,7 @@ Learn more at [skeleton-framework.github.io](http://skeleton-framework.github.io
 ## Usage
 Install the sources into your node app via `npm install skeleton-framework`.
 
-Install the compiled version into your frontend via `bower install skeleton-framework`.
+Install the compiled version into your frontend via `bower install skeletonframework`.
 
 Install the latest development version via `git clone https://github.com/skeleton-framework/skeleton-framework.git`
 
