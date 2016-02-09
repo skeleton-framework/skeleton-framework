@@ -11,6 +11,6 @@ Install the compiled version into your frontend via `bower install skeleton-fram
 
 Install the latest development version via `git clone https://github.com/skeleton-framework/skeleton-framework.git`
 
-Contributions are welcome! Develoment docs can be found on the [wiki](https://github.com/skeleton-framework/skeleton-framework/wiki/Skeleton-Framework-Development)
+Contributions are welcome! Development docs can be found on the [wiki](https://github.com/skeleton-framework/skeleton-framework/wiki/Skeleton-Framework-Development)
 
 If you experience bugs or errors, please report it on the [issue tracker](https://github.com/skeleton-framework/skeleton-framework/issues)
