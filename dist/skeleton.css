@@ -1,4 +1,4 @@
-/*! Skeleton Framework | 1.0.7 | MIT | Feb 9th, 2016 */
+/*! Skeleton Framework | 1.0.7 | MIT | Feb 22nd, 2016 */
 
 /* Table of contents
 - Grid
@@ -792,7 +792,6 @@ pre > code {
 /* Tables */
 
 table {
-  display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
