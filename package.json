@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/skeleton-framework/skeletonframework.git"
+    "url": "https://github.com/skeleton-framework/skeleton-framework.git"
   },
   "bugs": {
-    "url": "https://github.com/skeleton-framework/skeletonframework/issues"
+    "url": "https://github.com/skeleton-framework/skeleton-framework/issues"
   },
   "keywords": [
     "css",
