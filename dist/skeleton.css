@@ -1,4 +1,4 @@
-/*! skeleton-framework | 1.0.6 | MIT | 2/2/2016 */
+/*! skeleton-framework | 2.0.0 | MIT | 0/6/2016 */
 /* Table of contents
 - Base Styles
 - Grid
@@ -14,6 +14,7 @@
 - Clearing
 - Media Queries
 */
+
 html {
   font-size: 1em;
   box-sizing: border-box;
@@ -33,6 +34,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
+
 .container {
   margin: 0 auto;
   width: calc(100% - 1rem);
@@ -447,6 +449,7 @@ body {
     margin-left: calc(91.6666666663% + 0.5rem);
   }
 }
+
 /* Base Typo
  ------------------------------------------------- */
 
@@ -497,7 +500,6 @@ h6 {
   letter-spacing: 0;
 }
 
-
 /* Larger than phablet */
 
 @media (min-width: 560px) {
@@ -525,7 +527,6 @@ p {
   margin-top: 0;
 }
 
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -536,6 +537,7 @@ a {
 a:hover {
   color: #0FA0CE;
 }
+
 .button,
 button,
 input[type="submit"],
@@ -634,6 +636,7 @@ input[type="button"].button-primary:disabled {
   background-color: #7CD9F8;
   border-color: #7CD9F8;
 }
+
 input[type="email"],
 input[type="number"],
 input[type="date"],
@@ -663,8 +666,8 @@ textarea:not([rows]) {
   height: 2.5rem;
 }
 
-
 /* Removes awkward default styles on some inputs for iOS */
+
 input[type="email"],
 input[type="number"],
 input[type="date"],
@@ -723,6 +726,7 @@ label > .label-body {
   margin-left: 0.5rem;
   font-weight: normal;
 }
+
 ul {
   list-style: circle inside;
 }
@@ -748,6 +752,7 @@ ol ul {
 li {
   margin-bottom: 1rem;
 }
+
 code {
   padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
@@ -764,6 +769,7 @@ pre > code {
   white-space: pre;
   overflow: auto;
 }
+
 table {
   display: block;
   overflow-x: auto;
@@ -786,6 +792,7 @@ th:last-child,
 td:last-child {
   padding-right: 0;
 }
+
 button,
 .button {
   margin-bottom: 1rem;
@@ -809,6 +816,7 @@ ol,
 form {
   margin-bottom: 2.5rem;
 }
+
 .u-full-width {
   width: 100%;
 }
@@ -816,7 +824,6 @@ form {
 .u-max-full-width {
   max-width: 100%;
 }
-
 
 /* Floats */
 
@@ -834,7 +841,6 @@ form {
   clear: both;
 }
 
-
 /* Positioning */
 
 .u-center-block {
@@ -842,7 +848,6 @@ form {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /**
  * Note:
@@ -862,7 +867,6 @@ form {
           transform: translateY(-50%) translateX(-50%);
 }
 
-
 /* Type */
 
 .u-text-center {
@@ -880,7 +884,6 @@ form {
   background-color: transparent;
   border: 0;
 }
-
 
 /* Peek a boo */
 
@@ -900,7 +903,6 @@ form {
   visibility: visible !important;
 }
 
-
 /* Misc */
 
 .u-img-responsive {
@@ -908,6 +910,7 @@ form {
   max-width: 100%;
   height: auto;
 }
+
 /* Misc */
 
 hr {
@@ -916,7 +919,6 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1;
 }
-
 
 /* Clearing */
 
@@ -936,14 +938,12 @@ hr {
 * buttons section and style it there.
 *****/
 
-
 @media (min-width: 400px) {
   /* Larger than mobile */
 }
 
 @media (min-width: 560px) {
-  /* Larger than phablet
-  (also point when grid becomes active) */
+  /* Larger than phablet (also point when grid becomes active) */
 }
 
 @media (min-width: 720px) {
