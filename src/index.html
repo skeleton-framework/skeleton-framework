@@ -6,8 +6,7 @@
   <title>Skeleton Framework Test File</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
-  <link rel="stylesheet" href="../dist/skeleton.css">
+  <link rel="stylesheet" href="skeleton.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <style>
@@ -27,6 +26,7 @@
 </head>
 
 <body>
+
   <div class="container">
     <div class="row">
       <div class="twelve columns">
@@ -422,6 +422,7 @@
     </div>
   </div>
   <br>
+
   <div class="container">
     <form>
       <div class="row">
@@ -452,6 +453,7 @@
     </form>
   </div>
   <br>
+
   <div class="container">
     <div class="row">
       <div class="tweleve columns">
@@ -460,6 +462,7 @@
     </div>
   </div>
   <br>
+
   <div class="container">
     <div class="row">
       <div class="six columns">
@@ -491,6 +494,7 @@
     </div>
   </div>
   <br>
+
   <div class="container">
     <div class="row">
       <div class="twelve columns">
@@ -499,6 +503,7 @@
     </div>
   </div>
   <br>
+
   <div class="container">
     <div class="row">
       <div class="twelve columns">
@@ -513,6 +518,7 @@
     </div>
   </div>
   <br>
+
   <div class="container">
     <div class="row">
       <div class="twelve columns">
@@ -551,19 +557,6 @@
     </div>
   </div>
   <br>
-
-  <script src="../node_modules/socket.io-client/socket.io.js"></script>
-  <script>
-    socket.on('news', function (data) {
-      console.log(data);
-      socket.emit('news', {
-        my: 'data'
-      })
-      socket.on('reload', function (data) {
-        document.location.reload(true);
-      });
-    });
-  </script>
 
 </body>
 
