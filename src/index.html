@@ -6,7 +6,7 @@
   <title>Skeleton Framework Test File</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="skeleton.css">
   <link rel="icon" type="image/png" href="">
 
@@ -17,6 +17,10 @@
       background-color: #0074D9;
       color: #fff;
       text-align: center;
+    }
+
+    .demo-row {
+        margin-bottom: 1rem;
     }
 
     .nested {
@@ -42,13 +46,13 @@
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row demo-row">
       <div class="twelve columns">
         <div class="demo-col">twelve columns</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="one column">
         <div class="demo-col">one</div>
       </div>
@@ -57,7 +61,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="two columns">
         <div class="demo-col">two columns</div>
       </div>
@@ -66,7 +70,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="three columns">
         <div class="demo-col">three columns</div>
       </div>
@@ -75,7 +79,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="four columns">
         <div class="demo-col">four columns</div>
       </div>
@@ -84,7 +88,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="five columns">
         <div class="demo-col">five columns</div>
       </div>
@@ -93,7 +97,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="six columns">
         <div class="demo-col">six columns</div>
       </div>
@@ -102,7 +106,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="four columns">
         <div class="demo-col">four columns</div>
       </div>
@@ -114,7 +118,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="three columns">
         <div class="demo-col">three columns</div>
       </div>
@@ -129,7 +133,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="two columns">
         <div class="demo-col">two columns</div>
       </div>
@@ -141,7 +145,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="seven columns">
         <div class="demo-col">seven columns</div>
       </div>
@@ -150,7 +154,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="one-third column">
         <div class="demo-col">one-third column</div>
       </div>
@@ -159,7 +163,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="one-half column">
         <div class="demo-col">one-half column</div>
       </div>
@@ -168,7 +172,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="one-quarter column">
         <div class="demo-col">one-quarter column</div>
       </div>
@@ -194,49 +198,49 @@
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row demo-row">
       <div class="eleven columns offset-by-one">
         <div class="demo-col">eleven columns offset by one</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="ten columns offset-by-two">
         <div class="demo-col">ten columns offset by two</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="nine columns offset-by-three">
         <div class="demo-col">nine columns offset by three</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="eight columns offset-by-four">
         <div class="demo-col">eight columns offset by four</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="seven columns offset-by-five">
         <div class="demo-col">seven columns offset by five</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="six columns offset-by-six">
         <div class="demo-col">six columns offset by six</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="five columns offset-by-seven">
         <div class="demo-col">five columns offset by seven</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="four columns">
         <div class="demo-col">four columns</div>
       </div>
@@ -245,13 +249,13 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="three columns offset-by-nine">
         <div class="demo-col">three columns offset by nine</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="six columns offset-by-three">
         <div class="demo-col">six columns offset by three</div>
       </div>
@@ -277,7 +281,7 @@
         <div class="demo-col">
           six columns with nested grid
           <div class="container container__nested">
-            <div class="row">
+            <div class="row demo-row" style="margin-top: 15px;">
               <div class="six columns">
                 <div class="demo-col nested">
                   six columns nested
@@ -313,7 +317,7 @@
   <br>
 
   <div class="container">
-    <div class="row">
+    <div class="row demo-row">
       <div class="xs-six sm-seven columns">
         <div class="demo-col">xs-six sm-seven columns</div>
       </div>
@@ -322,7 +326,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="sm-twelve md-six lg-four columns">
         <div class="demo-col">sm-twelve md-six lg-four columns</div>
       </div>
@@ -334,7 +338,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="md-six columns">
         <div class="demo-col">md-six columns</div>
       </div>
@@ -343,7 +347,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row demo-row">
       <div class="md-eight lg-six lg-offset-by-six columns">
         <div class="demo-col">md-eight lg-six lg-offset-by-six columns</div>
       </div>
