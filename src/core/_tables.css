@@ -1,5 +1,4 @@
 table {
-  display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
