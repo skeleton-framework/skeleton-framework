@@ -1,6 +1,6 @@
 /* Table of contents
-- Grid
 - Base Styles
+- Grid
 - Typography
 - Links
 - Buttons
@@ -14,103 +14,16 @@
 - Media Queries
 */
 
-:root {
-  --total-columns: 12;
-  --column-width: calc(100% / var(--total-columns));
-  --max-width: 1200px;
-  --gutter: 1rem;
-}
-
-
-/* Base Styles */
-
-@import "css/_base.css";
-
-/* Grid */
-
-@import "css/_grid.css";
-
-/* Typography and Links */
-
-@import "css/_typography.css";
-
-/* Buttons */
-
-@import "css/_buttons.css";
-
-/* Forms */
-
-@import "css/_forms.css";
-
-/* Lists */
-
-@import "css/_lists.css";
-
-/* Code */
-
-@import "css/_code.css";
-
-/* Tables */
-
-@import "css/_tables.css";
-
-/* Spacing */
-
-@import "css/_spacing.css";
-
-/* Utilities */
-
-@import "css/_utils.css";
-
-/* Misc */
-
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1;
-}
-
-
-/* Clearing */
-
-.container:after,
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* Media Queries */
-
-
-/* Note: The best way to structure the use of media queries is to create the
-   queries near the relevant code. For example, if you wanted to change the
-   styles for buttons on small devices, paste the mobile query code up in the
-   buttons section and style it there. */
-
-
-/* Larger than mobile */
-
-@media (min-width: 400px) {}
-
-
-/* Larger than phablet (also point when grid becomes active) */
-
-@media (min-width: 560px) {}
-
-
-/* Larger than tablet */
-
-@media (min-width: 720px) {}
-
-
-/* Larger than desktop */
-
-@media (min-width: 960px) {}
-
-
-/* Larger than Desktop HD */
-
-@media (min-width: 1200px) {}
+@import "core/_root.css";
+@import "core/_base.css";
+@import "core/_grid.css";
+@import "core/_typography.css";
+@import "core/_buttons.css";
+@import "core/_forms.css";
+@import "core/_lists.css";
+@import "core/_code.css";
+@import "core/_tables.css";
+@import "core/_spacing.css";
+@import "core/_utils.css";
+@import "core/_misc.css";
+@import "core/_queries.css";
