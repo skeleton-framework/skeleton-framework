@@ -9,10 +9,9 @@ input[type="password"],
 textarea,
 select {
   padding: 0.4rem 0.6rem;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #FFF;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  background-color: var(--form-background-color);
+  border: var(--form-border);
+  border-radius: var(--border-radius);
   box-shadow: none;
 }
 
@@ -30,7 +29,6 @@ textarea:not([rows]) {
 
 
 /* Removes awkward default styles on some inputs for iOS */
-
 input[type="email"],
 input[type="number"],
 input[type="date"],
@@ -63,7 +61,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: var(--form-border-enter);
   outline: 0;
 }
 

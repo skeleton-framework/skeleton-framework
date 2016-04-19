@@ -6,7 +6,7 @@ input[type="button"] {
   display: inline-block;
   height: 2.5rem;
   padding: 0 1.9rem;
-  color: #555;
+  color: var(--button-font-color);
   text-align: center;
   font-size: 0.7rem;
   font-weight: 600;
@@ -15,9 +15,9 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #BBB;
+  background-color: var(--button-background-color);
+  border-radius: var(--border-radius);
+  border: var(--button-border);
   cursor: pointer;
 }
 
@@ -31,15 +31,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: var(--button-font-color-enter);
+  border-color: var(--button-border-color-enter);
   outline: 0;
-}
-
-.button:disabled {
-  border: 1px solid #E3E3E3;
-  color: #888;
-  cursor: not-allowed;
 }
 
 .button:active,
@@ -47,8 +41,14 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-  color: #222;
-  border-color: #222;
+  color: var(--button-font-color-active);
+  border-color: var(--button-border-color-active);
+}
+
+.button:disabled {
+  border: var(--button-border-disabled);
+  color: var(--button-font-color-disabled);
+  cursor: not-allowed;
 }
 
 .button.button-primary,
@@ -56,9 +56,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0;
+  border: var(--primary-button-border);
+  color: var(--primary-button-font-color);
+  background-color: var(--primary-button-background-color);
 }
 
 .button.button-primary:hover,
@@ -71,20 +71,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB;
-}
-
-.button.button-primary:disabled,
-button.button-primary:disabled,
-input[type="submit"].button-primary:disabled,
-input[type="reset"].button-primary:disabled,
-input[type="button"].button-primary:disabled {
-  color: #FFF;
-  cursor: not-allowed;
-  background-color: #7CD9F8;
-  border-color: #7CD9F8;
+  color: var(--primary-button-font-color-enter);
+  background-color: var(--primary-button-background-color-enter);
+  border-color: var(--primary-button-border-color-enter);
 }
 
 .button.button-primary:active,
@@ -92,7 +81,18 @@ button.button-primary:active,
 input[type="submit"].button-primary:active,
 input[type="reset"].button-primary:active,
 input[type="button"].button-primary:active {
-  color: #FFF;
-  background-color: #157b9b;
-  border-color: #157b9b;
+  color: var(--primary-button-font-color-active);
+  background-color: var(--primary-button-background-color-active);
+  border-color: var(--primary-button-border-color-active);
+}
+
+.button.button-primary:disabled,
+button.button-primary:disabled,
+input[type="submit"].button-primary:disabled,
+input[type="reset"].button-primary:disabled,
+input[type="button"].button-primary:disabled {
+  color: var(--primary-button-font-color-disabled);
+  cursor: not-allowed;
+  background-color: var(--primary-button-background-color-disabled);
+  border-color: var(--primary-button-border-color-disabled);
 }
