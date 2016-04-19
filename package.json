@@ -1,18 +1,27 @@
 {
   "name": "skeleton-framework",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "license": "MIT",
-  "homepage": "https://github.com/skeleton-framework/skeleton-framework#readme",
+  "homepage": "https://github.com/skeleton-framework/skeletonframework#readme",
   "description": "A simple responsive framework for mobile friendly development.",
-  "author": [
-    "Skeleton Framework"
+  "author": "Skeleton Framework",
+  "contributors": [
+    "Dave Gamache",
+    "Gary DeLaney",
+    "Ben Hinchley",
+    "Nick Lorenson"
   ],
+  "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "dev": "gulp dev",
-    "prewatch": "gulp dev",
-    "watch": "gulp watch",
-    "dist": "gulp dist"
+    "start": "npm run watch & npm run serve",
+    "build": "node index",
+    "watch": "npm-scripts-watcher",
+    "serve": "live-server --port=3000 --mount=/:/dist --open=/dist --watch=/dist"
+  },
+  "watch": {
+    "src/**/*.css": [
+      "build"
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,22 +37,8 @@
     "skeleton-framework"
   ],
   "devDependencies": {
-    "autoprefixer": "^6.2.1",
-    "del": "^2.2.0",
-    "gulp": "^3.9.0",
-    "gulp-connect": "^2.3.1",
-    "gulp-header": "^1.7.1",
-    "gulp-if": "^2.0.0",
-    "gulp-minify-css": "^1.2.2",
-    "gulp-postcss": "^6.0.1",
-    "gulp-rename": "^1.2.2",
-    "moment": "^2.10.6",
-    "normalize.css": "^3.0.3",
-    "opener": "^1.4.1",
-    "postcss": "^5.0.13",
-    "postcss-calc": "^5.0.0",
-    "postcss-custom-properties": "^5.0.0",
-    "postcss-import": "^7.1.3"
-  },
-  "dependencies": {}
+    "live-server": "^0.9.2",
+    "npm-scripts-watcher": "^1.0.2",
+    "skeleton-postcss": "^1.0.4"
+  }
 }
