@@ -1,4 +1,6 @@
 # Skeleton Framework
+
+[![Join the chat at https://gitter.im/skeleton-framework/skeleton-framework](https://badges.gitter.im/skeleton-framework/skeleton-framework.svg)](https://gitter.im/skeleton-framework/skeleton-framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A simple responsive framework for mobile friendly development. 
 Skeleton Framework takes its roots from
 [dhg/Skeleton](https://github.com/dhg/Skeleton), 
