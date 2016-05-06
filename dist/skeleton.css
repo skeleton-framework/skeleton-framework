@@ -539,6 +539,36 @@ a:hover {
   color: #0FA0CE;
 }
 
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.text-primary {
+ color: #1EAEDB
+}
+
+.text-success {
+  color: #2ecc71
+}
+
+.text-danger {
+  color: #e74c3c
+}
+
+/* Aligns
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .button,
 button,
 input[type="submit"],
@@ -891,13 +921,20 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre;
-  overflow: auto;
+  white-space: 10px;
+  overflow-x: scroll;
 }
 
 table {
   overflow-x: auto;
+	display: block;
+  border-collapse: collapse;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
+}
+
+tr {
+  min-width: 20px;
 }
 
 th,

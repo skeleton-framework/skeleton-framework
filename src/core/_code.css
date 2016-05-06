@@ -11,6 +11,6 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre;
-  overflow: auto;
+  white-space: 10px;
+  overflow-x: scroll;
 }

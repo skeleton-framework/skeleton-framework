@@ -1,6 +1,13 @@
 table {
   overflow-x: auto;
+	display: block;
+  border-collapse: collapse;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
+}
+
+tr {
+  min-width: 20px;
 }
 
 th,

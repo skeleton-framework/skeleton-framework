@@ -87,3 +87,31 @@ a {
 a:hover {
   color: var(--link-color-hover);
 }
+
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.text-primary {
+ color: var(--text-color-primary)
+}
+
+.text-success {
+  color: var(--text-color-success)
+}
+
+.text-danger {
+  color: var(--text-color-danger)
+}
+
+/* Aligns
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

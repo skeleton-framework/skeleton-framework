@@ -13,6 +13,10 @@
   --link-color: #1EAEDB;
   --link-color-hover: #0FA0CE;
 
+  --text-color-primary: #1EAEDB;
+  --text-color-danger: #e74c3c;
+  --text-color-success: #2ecc71;
+
   --button-font-color: #555;
   --button-font-color-enter: #333;
   --button-font-color-active: #222;
