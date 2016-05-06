@@ -1,13 +1,8 @@
 table {
   overflow-x: auto;
-	display: block;
   border-collapse: collapse;
-  width: 100%;
+  max-width: 100%;
   -webkit-overflow-scrolling: touch;
-}
-
-tr {
-  min-width: 20px;
 }
 
 th,
@@ -25,4 +20,26 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0;
+}
+
+@media (max-width: 560px) {
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 1rem;
+  }
+
+  table th:last-child,
+  table td:last-child {
+    border-bottom: 1px solid #000;
+  }
 }
