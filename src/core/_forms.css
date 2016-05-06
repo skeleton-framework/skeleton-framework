@@ -13,6 +13,11 @@ select {
   border: var(--form-border);
   border-radius: var(--border-radius);
   box-shadow: none;
+  -webkit-transition: border 0.2s;
+  -moz-transition: border 0.2s;
+  -ms-transition: border 0.2s;
+  -o-transition: border 0.2s;
+  transition: border 0.2s;
 }
 
 input[type="email"],

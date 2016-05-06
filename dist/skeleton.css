@@ -1,4 +1,4 @@
-/*! skeleton-framework | 1.0.10 | MIT | 1/18/2016 */
+/*! skeleton-framework | 1.0.10 | MIT | 5/6/2016 */
 /* Table of contents
 - Base Styles
 - Grid
@@ -560,6 +560,8 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #BBB;
   cursor: pointer;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
 }
 
 .button:hover,
@@ -586,7 +588,16 @@ input[type="button"]:active {
   border-color: #222;
 }
 
-.button:disabled {
+.button:disabled,
+.button:disabled:hover,
+button[disabled],
+.button[disabled],
+.button-primary[disabled],
+.button-success[disabled],
+.button-danger[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
   border: 1px solid #E3E3E3;
   color: #888;
   cursor: not-allowed;
@@ -600,6 +611,8 @@ input[type="button"].button-primary {
   border: 1px solid #33C3F0;
   color: #FFF;
   background-color: #33C3F0;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .button.button-primary:hover,
@@ -638,6 +651,102 @@ input[type="button"].button-primary:disabled {
   border-color: #7CD9F8;
 }
 
+.button.button-success,
+button.button-success,
+input[type="submit"].button-success,
+input[type="reset"].button-success,
+input[type="button"].button-success {
+  border: 1px solid #2ecc71;
+  color: #FFF;
+  background-color: #2ecc71;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.button.button-success:hover,
+button.button-success:hover,
+input[type="submit"].button-success:hover,
+input[type="reset"].button-success:hover,
+input[type="button"].button-success:hover,
+.button.button-success:focus,
+button.button-success:focus,
+input[type="submit"].button-success:focus,
+input[type="reset"].button-success:focus,
+input[type="button"].button-success:focus {
+  color: #FFF;
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+
+.button.button-success:active,
+button.button-success:active,
+input[type="submit"].button-success:active,
+input[type="reset"].button-success:active,
+input[type="button"].button-success:active {
+  color: #FFF;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.button.button-success:disabled,
+button.button-success:disabled,
+input[type="submit"].button-success:disabled,
+input[type="reset"].button-success:disabled,
+input[type="button"].button-success:disabled {
+  color: #FFF;
+  cursor: not-allowed;
+  background-color: #82e3aa;
+  border-color: #82e3aa;
+}
+
+.button.button-danger,
+button.button-danger,
+input[type="submit"].button-danger,
+input[type="reset"].button-danger,
+input[type="button"].button-danger {
+  border: 1px solid #e74c3c;
+  color: #FFF;
+  background-color: #e74c3c;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.button.button-danger:hover,
+button.button-danger:hover,
+input[type="submit"].button-danger:hover,
+input[type="reset"].button-danger:hover,
+input[type="button"].button-danger:hover,
+.button.button-danger:focus,
+button.button-danger:focus,
+input[type="submit"].button-danger:focus,
+input[type="reset"].button-danger:focus,
+input[type="button"].button-danger:focus {
+  color: #FFF;
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+.button.button-danger:active,
+button.button-danger:active,
+input[type="submit"].button-danger:active,
+input[type="reset"].button-danger:active,
+input[type="button"].button-danger:active {
+  color: #FFF;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.button.button-danger:disabled,
+button.button-danger:disabled,
+input[type="submit"].button-danger:disabled,
+input[type="reset"].button-danger:disabled,
+input[type="button"].button-danger:disabled {
+  color: #FFF;
+  cursor: not-allowed;
+  background-color: #ee8377;
+  border-color: #ee8377;
+}
+
 input[type="email"],
 input[type="number"],
 input[type="date"],
@@ -653,6 +762,8 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
 }
 
 input[type="email"],
