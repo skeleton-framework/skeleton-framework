@@ -800,6 +800,7 @@ textarea {
   min-height: 4rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
+  resize: vertical;
 }
 
 input[type="email"]:focus,
@@ -813,6 +814,18 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+.has-error,
+.has-error:focus {
+  border: 1px solid #e74c3c !important;
+  outline: 0;
+}
+
+.has-success,
+.has-success:focus {
+  border: 1px solid #2ecc71 !important;
   outline: 0;
 }
 

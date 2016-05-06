@@ -74,6 +74,8 @@
   --form-font-color: #222;
   --form-border: 1px solid #D1D1D1;
   --form-border-enter: 1px solid #33C3F0;
+  --form-border-enter-error: 1px solid #e74c3c;
+  --form-border-enter-success: 1px solid #2ecc71;
 
   --code-background: #F1F1F1;
   --code-border: 1px solid #E1E1E1;
