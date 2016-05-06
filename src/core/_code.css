@@ -14,3 +14,9 @@ pre > code {
   white-space: pre;
   overflow-x: auto;
 }
+
+@media (max-width: 560px) {
+  pre > code {
+    white-space: nowrap;
+  }
+}

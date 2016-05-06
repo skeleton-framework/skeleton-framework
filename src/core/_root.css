@@ -84,6 +84,22 @@
   --code-background: #F1F1F1;
   --code-border: 1px solid #E1E1E1;
 
+  --alert-font-color: #000;
+  --alert-border: 1px solid #000;
+  --alert-background-color: ;
+
+  --alert-primary-font-color: #FFF;
+  --alert-primary-border: 1px solid #33C3F0;
+  --alert-primary-background-color: #33C3F0;
+
+  --alert-success-font-color: #FFF;
+  --alert-success-border: 1px solid #2ecc71;
+  --alert-success-background-color: #2ecc71;
+
+  --alert-danger-font-color: #FFF;
+  --alert-danger-border: 1px solid #e74c3c;
+  --alert-danger-background-color: #e74c3c;
+
   --td-border-bottom: 1px solid #E1E1E1;
 
   --border-radius: 4px;
