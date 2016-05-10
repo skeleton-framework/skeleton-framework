@@ -61,6 +61,10 @@
   text-align: right !important;
 }
 
+.u-text-left {
+  text-align: left !important;
+}
+
 .u-text-hide {
   font: 0/0 a;
   color: transparent;
