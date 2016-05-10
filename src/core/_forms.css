@@ -13,6 +13,11 @@ select {
   border: var(--form-border);
   border-radius: var(--border-radius);
   box-shadow: none;
+  -webkit-transition: border 0.2s;
+  -moz-transition: border 0.2s;
+  -ms-transition: border 0.2s;
+  -o-transition: border 0.2s;
+  transition: border 0.2s;
 }
 
 input[type="email"],
@@ -49,6 +54,7 @@ textarea {
   min-height: 4rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
+  resize: vertical;
 }
 
 input[type="email"]:focus,
@@ -62,6 +68,18 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   border: var(--form-border-enter);
+  outline: 0;
+}
+
+.has-error,
+.has-error:focus {
+  border: var(--form-border-enter-error) !important;
+  outline: 0;
+}
+
+.has-success,
+.has-success:focus {
+  border: var(--form-border-enter-success) !important;
   outline: 0;
 }
 

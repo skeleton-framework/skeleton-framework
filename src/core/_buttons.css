@@ -19,6 +19,11 @@ input[type="button"] {
   border-radius: var(--border-radius);
   border: var(--button-border);
   cursor: pointer;
+  -webkit-transition: border 0.2s;
+  -moz-transition: border 0.2s;
+  -ms-transition: border 0.2s;
+  -o-transition: border 0.2s;
+  transition: border 0.2s;
 }
 
 .button:hover,
@@ -45,7 +50,16 @@ input[type="button"]:active {
   border-color: var(--button-border-color-active);
 }
 
-.button:disabled {
+.button:disabled,
+.button:disabled:hover,
+button[disabled],
+.button[disabled],
+.button-primary[disabled],
+.button-success[disabled],
+.button-danger[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
   border: var(--button-border-disabled);
   color: var(--button-font-color-disabled);
   cursor: not-allowed;
@@ -59,6 +73,11 @@ input[type="button"].button-primary {
   border: var(--primary-button-border);
   color: var(--primary-button-font-color);
   background-color: var(--primary-button-background-color);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .button.button-primary:hover,
@@ -95,4 +114,106 @@ input[type="button"].button-primary:disabled {
   cursor: not-allowed;
   background-color: var(--primary-button-background-color-disabled);
   border-color: var(--primary-button-border-color-disabled);
+}
+
+.button.button-success,
+button.button-success,
+input[type="submit"].button-success,
+input[type="reset"].button-success,
+input[type="button"].button-success {
+  border: var(--success-button-border);
+  color: var(--success-button-font-color);
+  background-color: var(--success-button-background-color);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.button.button-success:hover,
+button.button-success:hover,
+input[type="submit"].button-success:hover,
+input[type="reset"].button-success:hover,
+input[type="button"].button-success:hover,
+.button.button-success:focus,
+button.button-success:focus,
+input[type="submit"].button-success:focus,
+input[type="reset"].button-success:focus,
+input[type="button"].button-success:focus {
+  color: var(--success-button-font-color-enter);
+  background-color: var(--success-button-background-color-enter);
+  border-color: var(--success-button-border-color-enter);
+}
+
+.button.button-success:active,
+button.button-success:active,
+input[type="submit"].button-success:active,
+input[type="reset"].button-success:active,
+input[type="button"].button-success:active {
+  color: var(--success-button-font-color-active);
+  background-color: var(--success-button-background-color-active);
+  border-color: var(--success-button-border-color-active);
+}
+
+.button.button-success:disabled,
+button.button-success:disabled,
+input[type="submit"].button-success:disabled,
+input[type="reset"].button-success:disabled,
+input[type="button"].button-success:disabled {
+  color: var(--success-button-font-color-disabled);
+  cursor: not-allowed;
+  background-color: var(--success-button-background-color-disabled);
+  border-color: var(--success-button-border-color-disabled);
+}
+
+.button.button-danger,
+button.button-danger,
+input[type="submit"].button-danger,
+input[type="reset"].button-danger,
+input[type="button"].button-danger {
+  border: var(--danger-button-border);
+  color: var(--danger-button-font-color);
+  background-color: var(--danger-button-background-color);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.button.button-danger:hover,
+button.button-danger:hover,
+input[type="submit"].button-danger:hover,
+input[type="reset"].button-danger:hover,
+input[type="button"].button-danger:hover,
+.button.button-danger:focus,
+button.button-danger:focus,
+input[type="submit"].button-danger:focus,
+input[type="reset"].button-danger:focus,
+input[type="button"].button-danger:focus {
+  color: var(--danger-button-font-color-enter);
+  background-color: var(--danger-button-background-color-enter);
+  border-color: var(--danger-button-border-color-enter);
+}
+
+.button.button-danger:active,
+button.button-danger:active,
+input[type="submit"].button-danger:active,
+input[type="reset"].button-danger:active,
+input[type="button"].button-danger:active {
+  color: var(--danger-button-font-color-active);
+  background-color: var(--danger-button-background-color-active);
+  border-color: var(--danger-button-border-color-active);
+}
+
+.button.button-danger:disabled,
+button.button-danger:disabled,
+input[type="submit"].button-danger:disabled,
+input[type="reset"].button-danger:disabled,
+input[type="button"].button-danger:disabled {
+  color: var(--danger-button-font-color-disabled);
+  cursor: not-allowed;
+  background-color: var(--danger-button-background-color-disabled);
+  border-color: var(--danger-button-border-color-disabled);
 }
