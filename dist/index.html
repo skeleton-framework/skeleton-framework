@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Skeleton Framework Test File</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="skeleton.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -367,18 +367,23 @@
   <div class="container">
     <div class="row">
       <div class="twelve columns">
-        <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 5.0rem</span></h1>
-        <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 4.2rem</span></h2>
-        <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 3.6rem</span></h3>
-        <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 3.0rem</span></h4>
-        <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 2.4rem</span></h5>
-        <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 1.5rem</span></h6>
+        <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 3.6rem</span></h1>
+        <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 3.0rem</span></h2>
+        <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 2.4rem</span></h3>
+        <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 1.8rem</span></h4>
+        <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 1.5rem</span></h5>
+        <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 1.2rem</span></h6>
 
         <p>
-          <strong>Bolded</strong>
-          <em>Italicized</em>
-          <a>Colored</a>
+          <strong>Bolded #1</strong>
+          <b>Bolded #2</b>
+          <em>Italicized #1</em>
+          <i>Italicized #2</i>
+          <font class="text-primary">Colored #1</font>
+          <font class="text-success">Colored #2</font>
+          <font class="text-danger">Colored #3</font>
           <u>Underlined</u>
+          <s>Stroked</s>
         </p>
 
         <p>
@@ -406,12 +411,32 @@
           <button>Button element</button>
           <input type="submit" value="submit input">
           <input type="button" value="button input">
+          <input type="button" value="active button" active>
+          <input type="button" value="disabled button" disabled>
         </div>
         <div>
           <a class="button button-primary" href="#">Anchor button</a>
           <button class="button-primary">Button element</button>
           <input class="button-primary" type="submit" value="submit input">
           <input class="button-primary" type="button" value="button input">
+          <input class="button-primary" type="button" value="active button" active>
+          <input class="button-primary" type="button" value="disabled button" disabled>
+        </div>
+        <div>
+          <a class="button button-success" href="#">Anchor button</a>
+          <button class="button-success">Button element</button>
+          <input class="button-success" type="submit" value="submit input">
+          <input class="button-success" type="button" value="button input">
+          <input class="button-success" type="button" value="active button" active>
+          <input class="button-success" type="button" value="disabled button" disabled>
+        </div>
+        <div>
+          <a class="button button-danger" href="#">Anchor button</a>
+          <button class="button-danger">Button element</button>
+          <input class="button-danger" type="submit" value="submit input">
+          <input class="button-danger" type="button" value="button input">
+          <input class="button-danger" type="button" value="active button" active>
+          <input class="button-danger" type="button" value="disabled button" disabled>
         </div>
       </div>
     </div>
@@ -437,6 +462,20 @@
         <div class="six columns">
           <label for="exampleRecipientInput">Reason for contacting</label>
           <select class="u-full-width">
+            <option value="Option 1">Questions</option>
+            <option value="Option 2">Admiration</option>
+            <option value="Option 3">Can I get your number?</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width has-error" type="email" placeholder="test@mailbox.com" value="john@doe">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Reason for contacting</label>
+          <select class="u-full-width has-success">
             <option value="Option 1">Questions</option>
             <option value="Option 2">Admiration</option>
             <option value="Option 3">Can I get your number?</option>
@@ -518,6 +557,35 @@
             }
           </code>
         </pre>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3>alerts</h3>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="alert">
+          This is a alert!
+        </div>
+        <div class="alert alert-primary">
+          This is a primary alert!
+        </div>
+        <div class="alert alert-success">
+          This is a success alert!
+        </div>
+        <div class="alert alert-danger">
+          This is a danger alert!
+        </div>
       </div>
     </div>
   </div>

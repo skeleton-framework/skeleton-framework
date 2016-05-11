@@ -12,5 +12,11 @@ pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre;
-  overflow: auto;
+  overflow-x: auto;
+}
+
+@media (max-width: 560px) {
+  pre > code {
+    white-space: nowrap;
+  }
 }

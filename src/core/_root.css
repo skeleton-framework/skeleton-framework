@@ -13,6 +13,10 @@
   --link-color: #1EAEDB;
   --link-color-hover: #0FA0CE;
 
+  --text-color-primary: #1EAEDB;
+  --text-color-danger: #e74c3c;
+  --text-color-success: #2ecc71;
+
   --button-font-color: #555;
   --button-font-color-enter: #333;
   --button-font-color-active: #222;
@@ -40,13 +44,61 @@
   --primary-button-border-color-active: #157b9b;
   --primary-button-border-color-disabled: #7CD9F8;
 
+  --success-button-font-color: #FFF;
+  --success-button-font-color-enter: #FFF;
+  --success-button-font-color-active: #FFF;
+  --success-button-font-color-disabled: #FFF;
+
+  --success-button-background-color: #2ecc71;
+  --success-button-background-color-enter: #27ae60;
+  --success-button-background-color-active: #2ecc71;
+  --success-button-background-color-disabled: #82e3aa;
+
+  --success-button-border: 1px solid #2ecc71;
+  --success-button-border-color-enter: #27ae60;
+  --success-button-border-color-active: #2ecc71;
+  --success-button-border-color-disabled: #82e3aa;
+
+  --danger-button-font-color: #FFF;
+  --danger-button-font-color-enter: #FFF;
+  --danger-button-font-color-active: #FFF;
+  --danger-button-font-color-disabled: #FFF;
+
+  --danger-button-background-color: #e74c3c;
+  --danger-button-background-color-enter: #c0392b;
+  --danger-button-background-color-active: #e74c3c;
+  --danger-button-background-color-disabled: #ee8377;
+
+  --danger-button-border: 1px solid #e74c3c;
+  --danger-button-border-color-enter: #c0392b;
+  --danger-button-border-color-active: #e74c3c;
+  --danger-button-border-color-disabled: #ee8377;
+
   --form-background-color: #FFF;
   --form-font-color: #222;
   --form-border: 1px solid #D1D1D1;
   --form-border-enter: 1px solid #33C3F0;
+  --form-border-enter-error: 1px solid #e74c3c;
+  --form-border-enter-success: 1px solid #2ecc71;
 
   --code-background: #F1F1F1;
   --code-border: 1px solid #E1E1E1;
+
+  --alert-font-color: #000;
+  --alert-border: 1px solid #000;
+  --alert-background-color: ;
+
+  --alert-primary-font-color: #FFF;
+  --alert-primary-border: 1px solid #33C3F0;
+  --alert-primary-background-color: #33C3F0;
+
+  --alert-success-font-color: #FFF;
+  --alert-success-border: 1px solid #2ecc71;
+  --alert-success-background-color: #2ecc71;
+
+  --alert-danger-font-color: #FFF;
+  --alert-danger-border: 1px solid #e74c3c;
+  --alert-danger-background-color: #e74c3c;
 
   --td-border-bottom: 1px solid #E1E1E1;
 
