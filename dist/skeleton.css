@@ -904,7 +904,7 @@ li {
   margin-bottom: 1rem;
 }
 
-.card h1, 
+.card h1,
 .card h2,
 .card h3,
 .card h4,
@@ -915,22 +915,21 @@ li {
 }
 
 a.card {
-  content: "";
-  display: table;
-  clear: both;
-  width: 100%;
+  display: block;
   color: #757575;
   text-decoration: none;
-  -webkit-transition: color .3s, transform .3s;
-  -webkit-transition: color .3s, -webkit-transform .3s;
-  transition: color .3s, -webkit-transform .3s;
-  transition: color .3s, transform .3s;
-  transition: color .3s, transform .3s, -webkit-transform .3s;
+  -webkit-transition: color .3s, border-color .3s, -webkit-transform .3s;
+  transition: color .3s, border-color .3s, -webkit-transform .3s;
+  transition: color .3s, transform .3s, border-color .3s;
+  transition: color .3s, transform .3s, border-color .3s, -webkit-transform .3s;
 }
 
-a.card:hover {
-  color:black;
-  text-decoration: none;
+a.card:hover,
+a.card:active {
+  color: black;
+  border-color: #8A8A8A;
+  -webkit-transform: translateX(-2px) translateY(-2px);
+          transform: translateX(-2px) translateY(-2px);
 }
 
 code {
@@ -983,17 +982,30 @@ pre > code {
   background-color: #e74c3c;
 }
 
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive th,
+.table-responsive td {
+  white-space: nowrap;
+}
+
 table {
-  overflow-x: auto;
   border-collapse: collapse;
-  max-width: 100%;
   -webkit-overflow-scrolling: touch;
 }
 
 th,
 td {
   padding: 0.75rem 1rem;
+}
+
+th {
   text-align: left;
+}
+
+td {
   border-bottom: 1px solid #E1E1E1;
 }
 
@@ -1007,25 +1019,14 @@ td:last-child {
   padding-right: 0;
 }
 
-@media (max-width: 560px) {
-  table {
-    width: 100%;
-  }
+tr th {
+    border-bottom: 1px solid #000;
+}
 
-  th,
-  td {
-    display: block;
-    width: 100%;
-  }
-
+@media (min-width: 560px) {
   th:first-child,
   td:first-child {
     padding-left: 1rem;
-  }
-
-  table th:last-child,
-  table td:last-child {
-    border-bottom: 1px solid #000;
   }
 }
 
