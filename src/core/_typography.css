@@ -53,22 +53,22 @@ h6 {
 
 @media (min-width: 560px) {
   h1 {
-    font-size: 5.0rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
     font-size: 3.6rem;
   }
-  h4 {
+  h2 {
     font-size: 3.0rem;
   }
-  h5 {
+  h3 {
     font-size: 2.4rem;
   }
-  h6 {
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
     font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.2rem;
   }
 }
 

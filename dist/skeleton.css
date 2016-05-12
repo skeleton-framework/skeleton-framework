@@ -1,4 +1,4 @@
-/*! skeleton-framework | 1.1.0 | MIT | 5/11/2016 */
+/*! skeleton-framework | 1.0.10 | MIT | 3/11/2016 */
 /* Table of contents
 - Base Styles
 - Grid
@@ -505,22 +505,22 @@ h6 {
 
 @media (min-width: 560px) {
   h1 {
-    font-size: 5.0rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
     font-size: 3.6rem;
   }
-  h4 {
+  h2 {
     font-size: 3.0rem;
   }
-  h5 {
+  h3 {
     font-size: 2.4rem;
   }
-  h6 {
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
     font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.2rem;
   }
 }
 
@@ -575,6 +575,7 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #BBB;
   cursor: pointer;
+  -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
@@ -625,6 +626,7 @@ input[type="button"].button-primary {
   border: 1px solid #33C3F0;
   color: #FFF;
   background-color: #33C3F0;
+  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -672,6 +674,7 @@ input[type="button"].button-success {
   border: 1px solid #2ecc71;
   color: #FFF;
   background-color: #2ecc71;
+  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -719,6 +722,7 @@ input[type="button"].button-danger {
   border: 1px solid #e74c3c;
   color: #FFF;
   background-color: #e74c3c;
+  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -773,6 +777,7 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
+  -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
@@ -1098,7 +1103,8 @@ form {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
 }
 
 /* Type */
