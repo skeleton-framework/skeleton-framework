@@ -104,4 +104,10 @@
 
   --border-radius: 4px;
   --hr: 1px solid #E1E1E1;
+
+  --card-shift: -2px;
+  --card-active-border: #8A8A8A;
+  --card-border: #E1E1E1;
+  --card-shadow: #E1E1E1;
+  --card-anchor-color: #757575;
 }
