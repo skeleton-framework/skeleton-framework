@@ -554,21 +554,6 @@ a:hover {
   color: #e74c3c
 }
 
-/* Aligns
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
 .button,
 button,
 input[type="submit"],
@@ -590,7 +575,6 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #BBB;
   cursor: pointer;
-  -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
@@ -641,7 +625,6 @@ input[type="button"].button-primary {
   border: 1px solid #33C3F0;
   color: #FFF;
   background-color: #33C3F0;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -689,7 +672,6 @@ input[type="button"].button-success {
   border: 1px solid #2ecc71;
   color: #FFF;
   background-color: #2ecc71;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -737,7 +719,6 @@ input[type="button"].button-danger {
   border: 1px solid #e74c3c;
   color: #FFF;
   background-color: #e74c3c;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -792,7 +773,6 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
-  -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
@@ -1118,8 +1098,7 @@ form {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 
 /* Type */
@@ -1130,6 +1109,10 @@ form {
 
 .u-text-right {
   text-align: right !important;
+}
+
+.u-text-left {
+  text-align: left !important;
 }
 
 .u-text-hide {
