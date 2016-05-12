@@ -6,6 +6,7 @@
   border-radius: 4px;
   box-shadow: 1px 1px 1px #E1E1E1;
   min-height: 160px;
+  margin-bottom: 1rem;
 }
 
 .card h1, 
