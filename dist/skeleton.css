@@ -1,4 +1,4 @@
-/*! skeleton-framework | 1.0.10 | MIT | 3/11/2016 */
+/*! skeleton-framework | 1.0.10 | MIT | 4/12/2016 */
 /* Table of contents
 - Base Styles
 - Grid
@@ -960,7 +960,7 @@ pre > code {
   border-radius: 4px;
   border: 1px solid #000;
   color: #000;
-  background-color: ;
+  background-color: #FFF;
   padding: 10px 15px;
 }
 
