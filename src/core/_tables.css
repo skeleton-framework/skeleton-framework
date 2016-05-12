@@ -1,14 +1,27 @@
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive th,
+.table-responsive td {
+  white-space: nowrap;
+}
+
 table {
-  overflow-x: auto;
   border-collapse: collapse;
-  max-width: 100%;
   -webkit-overflow-scrolling: touch;
 }
 
 th,
 td {
   padding: 0.75rem 1rem;
+}
+
+th {
   text-align: left;
+}
+
+td {
   border-bottom: var(--td-border-bottom);
 }
 
@@ -22,24 +35,13 @@ td:last-child {
   padding-right: 0;
 }
 
-@media (max-width: 560px) {
-  table {
-    width: 100%;
-  }
+tr th {
+    border-bottom: 1px solid #000;
+}
 
-  th,
-  td {
-    display: block;
-    width: 100%;
-  }
-
+@media (min-width: 560px) {
   th:first-child,
   td:first-child {
     padding-left: 1rem;
-  }
-
-  table th:last-child,
-  table td:last-child {
-    border-bottom: 1px solid #000;
   }
 }
