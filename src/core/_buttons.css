@@ -3,6 +3,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  margin-bottom: 1rem;
   display: inline-block;
   height: 2.5rem;
   padding: 0 1.9rem;

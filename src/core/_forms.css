@@ -90,6 +90,13 @@ legend {
   font-weight: 600;
 }
 
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
 fieldset {
   padding: 0;
   border-width: 0;

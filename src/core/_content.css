@@ -1,0 +1,122 @@
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: var(--hr);
+}
+
+.alert {
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: var(--alert-border);
+  color: var(--alert-font-color);
+  background-color: var(--alert-background-color);
+  padding: 10px 15px;
+}
+
+.alert.alert-primary {
+  border: var(--alert-primary-border);
+  color: var(--alert-primary-font-color);
+  background-color: var(--alert-primary-background-color);
+}
+
+.alert.alert-success {
+  border: var(--alert-success-border);
+  color: var(--alert-success-font-color);
+  background-color: var(--alert-success-background-color);
+}
+
+.alert.alert-danger {
+  border: var(--alert-danger-border);
+  color: var(--alert-danger-font-color);
+  background-color: var(--alert-danger-background-color);
+}
+
+
+/* Cards */
+
+.card {
+  border: 1px solid var(--card-border);
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px var(--card-shadow);
+  min-height: 160px;
+  margin-bottom: 1rem;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6,
+.card p {
+  margin-bottom:1.2rem;
+}
+
+a.card {
+  display: block;
+  color: var(--card-anchor-color);
+  text-decoration: none;
+  transition: color .3s, transform .3s, border-color .3s;
+}
+
+a.card:hover,
+a.card:active {
+  color: black;
+  border-color: var(--card-active-border);
+  transform: translateX(var(--card-shift)) translateY(var(--card-shift));
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive th,
+.table-responsive td {
+  white-space: nowrap;
+}
+
+table {
+  border-collapse: collapse;
+  -webkit-overflow-scrolling: touch;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  border-bottom: var(--td-border-bottom);
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+tr th {
+    border-bottom: 1px solid #000;
+}
+
+@media (min-width: 560px) {
+  th:first-child,
+  td:first-child {
+    padding-left: 1rem;
+  }
+}
+
+

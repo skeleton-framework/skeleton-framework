@@ -422,3 +422,12 @@
     margin-left: calc((var(--column-width) * 11));
   }
 }
+
+/* Clearing */
+
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
