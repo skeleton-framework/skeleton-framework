@@ -41,5 +41,9 @@
     "live-server": "^0.9.2",
     "npm-scripts-watcher": "^1.0.2",
     "skeleton-postcss": "^1.0.4"
+  },
+  "dependencies": {
+    "js-combinatorics": "^0.5.2",
+    "postcss": "^5.2.11"
   }
 }
