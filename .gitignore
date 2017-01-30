@@ -10,3 +10,6 @@
 !/LICENSE
 !/package.json
 !/README.md
+!skeletons
+!bones
+!build.js

@@ -1,3 +1,24 @@
+/* the base! */
+html {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+/* the form stuff! */
 input[type="email"],
 input[type="number"],
 input[type="date"],
@@ -9,14 +30,11 @@ input[type="password"],
 textarea,
 select {
   padding: 0.4rem 0.6rem;
-  background-color: var(--form-background-color);
-  border: var(--form-border);
-  border-radius: var(--border-radius);
+  background-color: #FFF;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
   box-shadow: none;
   -webkit-transition: border 0.2s;
-  -moz-transition: border 0.2s;
-  -ms-transition: border 0.2s;
-  -o-transition: border 0.2s;
   transition: border 0.2s;
 }
 
@@ -67,19 +85,19 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: var(--form-border-enter);
+  border: 1px solid #33C3F0;
   outline: 0;
 }
 
 .has-error,
 .has-error:focus {
-  border: var(--form-border-enter-error) !important;
+  border: 1px solid #e74c3c !important;
   outline: 0;
 }
 
 .has-success,
 .has-success:focus {
-  border: var(--form-border-enter-success) !important;
+  border: 1px solid #2ecc71 !important;
   outline: 0;
 }
 
