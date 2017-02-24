@@ -1,5 +1,4 @@
-/* Base Typo
- ------------------------------------------------- */
+/* Base Typo */
 
 h1,
 h2,
@@ -76,9 +75,7 @@ p {
   margin-top: 0;
 }
 
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Links */
 
 a {
   color: var(--link-color);
@@ -88,8 +85,7 @@ a:hover {
   color: var(--link-color-hover);
 }
 
-/* Colors
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Colors */
 .text-primary {
  color: var(--text-color-primary)
 }
