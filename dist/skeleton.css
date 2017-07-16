@@ -1,4 +1,4 @@
-/*! skeleton-framework | 1.1.1 | MIT | 3/7/2016 */
+/*! skeleton-framework | 1.1.1 | MIT | 5/14/2017 */
 /* Table of contents
 - Base Styles
 - Grid
@@ -460,8 +460,7 @@ body {
   }
 }
 
-/* Base Typo
- ------------------------------------------------- */
+/* Base Typo */
 
 h1,
 h2,
@@ -537,8 +536,7 @@ p {
   margin-top: 0;
 }
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Links */
 
 a {
   color: #1EAEDB;
@@ -548,8 +546,7 @@ a:hover {
   color: #0FA0CE;
 }
 
-/* Colors
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Colors */
 
 .text-primary {
  color: #1EAEDB
@@ -900,6 +897,13 @@ ol ul {
 
 li {
   margin-bottom: 1rem;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: .2rem;
+  padding-left: .2rem;
+  margin-bottom: .5rem;
 }
 
 /* Cards */
