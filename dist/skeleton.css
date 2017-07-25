@@ -1,4 +1,4 @@
-/*! skeleton-framework | 1.1.1 | MIT | 5/14/2017 */
+/*! skeleton-framework | 1.1.1 | MIT | 2/25/2017 */
 /* Table of contents
 - Base Styles
 - Grid
@@ -468,9 +468,20 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 2rem;
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
 }
 
 h1 {
@@ -530,10 +541,6 @@ h6 {
   h6 {
     font-size: 1.2rem;
   }
-}
-
-p {
-  margin-top: 0;
 }
 
 /* Links */
@@ -910,7 +917,7 @@ li {
 
 .card {
   border: 1px solid #E1E1E1;
-  padding: 15px 25px;
+  padding: 10px 25px;
   border-radius: 4px;
   box-shadow: 1px 1px 1px #E1E1E1;
   min-height: 160px;
@@ -1051,10 +1058,7 @@ button,
 input,
 textarea,
 select,
-fieldset {
-  margin-bottom: 1.5rem;
-}
-
+fieldset,
 pre,
 blockquote,
 dl,
@@ -1064,7 +1068,11 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0;
 }
 
 .alert {
