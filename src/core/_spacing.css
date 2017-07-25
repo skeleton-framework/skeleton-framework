@@ -6,10 +6,7 @@ button,
 input,
 textarea,
 select,
-fieldset {
-  margin-bottom: 1.5rem;
-}
-
+fieldset,
 pre,
 blockquote,
 dl,
@@ -19,7 +16,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 p {
