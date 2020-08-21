@@ -1,11 +1,11 @@
 /*
-!/dist
-!/lib
+!/css
 !/src
 !/.editorconfig
 !/.gitignore
 !/.npmignore
 !/bower.json
+!/index.html
 !/index.js
 !/LICENSE
 !/package.json

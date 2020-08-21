@@ -1,53 +1,56 @@
 :root {
-
+  /* Grid */
   --total-columns: 12;
   --column-width: calc(100% / var(--total-columns));
   --max-width: 1200px;
   --gutter: 1rem;
 
+  /* Global */
   --font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   --background-color: #fff;
   --font-color: #222;
 
-  --link-color: #1EAEDB;
-  --link-color-hover: #0FA0CE;
+  /* Links */
+  --link-color: #1eaedb;
+  --link-color-hover: #0fa0ce;
 
-  --text-color-primary: #1EAEDB;
+  /* Text */
+  --text-color-primary: #1eaedb;
   --text-color-danger: #e74c3c;
   --text-color-success: #2ecc71;
+
+  /* Buttons */
+  --button-background-color: transparent;
 
   --button-font-color: #555;
   --button-font-color-enter: #333;
   --button-font-color-active: #222;
   --button-font-color-disabled: #888;
 
-  --button-background-color: transparent;
-
-  --button-border: 1px solid #BBB;
+  --button-border: 1px solid #bbb;
   --button-border-color-enter: #888;
   --button-border-color-active: #222;
-  --button-border-disabled: 1px solid #E3E3E3;
+  --button-border-disabled: 1px solid #e3e3e3;
 
-  --primary-button-font-color: #FFF;
-  --primary-button-font-color-enter: #FFF;
-  --primary-button-font-color-active: #FFF;
-  --primary-button-font-color-disabled: #FFF;
+  --primary-button-font-color: #fff;
+  --primary-button-font-color-enter: #fff;
+  --primary-button-font-color-active: #fff;
+  --primary-button-font-color-disabled: #fff;
 
-  --primary-button-background-color: #33C3F0;
-  --primary-button-background-color-enter: #1EAEDB;
+  --primary-button-background-color: #33c3f0;
+  --primary-button-background-color-enter: #1eaedb;
   --primary-button-background-color-active: #157b9b;
-  --primary-button-background-color-disabled: #7CD9F8;
+  --primary-button-background-color-disabled: #7cd9f8;
 
-  --primary-button-border: 1px solid #33C3F0;
-  --primary-button-border-color-enter: #1EAEDB;
+  --primary-button-border: 1px solid #33c3f0;
+  --primary-button-border-color-enter: #1eaedb;
   --primary-button-border-color-active: #157b9b;
-  --primary-button-border-color-disabled: #7CD9F8;
+  --primary-button-border-color-disabled: #7cd9f8;
 
-  --success-button-font-color: #FFF;
-  --success-button-font-color-enter: #FFF;
-  --success-button-font-color-active: #FFF;
-  --success-button-font-color-disabled: #FFF;
+  --success-button-font-color: #fff;
+  --success-button-font-color-enter: #fff;
+  --success-button-font-color-active: #fff;
+  --success-button-font-color-disabled: #fff;
 
   --success-button-background-color: #2ecc71;
   --success-button-background-color-enter: #27ae60;
@@ -59,10 +62,10 @@
   --success-button-border-color-active: #2ecc71;
   --success-button-border-color-disabled: #82e3aa;
 
-  --danger-button-font-color: #FFF;
-  --danger-button-font-color-enter: #FFF;
-  --danger-button-font-color-active: #FFF;
-  --danger-button-font-color-disabled: #FFF;
+  --danger-button-font-color: #fff;
+  --danger-button-font-color-enter: #fff;
+  --danger-button-font-color-active: #fff;
+  --danger-button-font-color-disabled: #fff;
 
   --danger-button-background-color: #e74c3c;
   --danger-button-background-color-enter: #c0392b;
@@ -74,40 +77,46 @@
   --danger-button-border-color-active: #e74c3c;
   --danger-button-border-color-disabled: #ee8377;
 
-  --form-background-color: #FFF;
+  /* Forms */
+  --form-background-color: #fff;
   --form-font-color: #222;
-  --form-border: 1px solid #D1D1D1;
-  --form-border-enter: 1px solid #33C3F0;
+  --form-border: 1px solid #d1d1d1;
+  --form-border-enter: 1px solid #33c3f0;
   --form-border-enter-error: 1px solid #e74c3c;
   --form-border-enter-success: 1px solid #2ecc71;
 
-  --code-background: #F1F1F1;
-  --code-border: 1px solid #E1E1E1;
+  /* Code */
+  --code-background: #f1f1f1;
+  --code-border: 1px solid #e1e1e1;
 
+  /* Alerts */
   --alert-font-color: #000;
   --alert-border: 1px solid #000;
-  --alert-background-color: #FFF;
+  --alert-background-color: #fff;
 
-  --alert-primary-font-color: #FFF;
-  --alert-primary-border: 1px solid #33C3F0;
-  --alert-primary-background-color: #33C3F0;
+  --alert-primary-font-color: #fff;
+  --alert-primary-border: 1px solid #33c3f0;
+  --alert-primary-background-color: #33c3f0;
 
-  --alert-success-font-color: #FFF;
+  --alert-success-font-color: #fff;
   --alert-success-border: 1px solid #2ecc71;
   --alert-success-background-color: #2ecc71;
 
-  --alert-danger-font-color: #FFF;
+  --alert-danger-font-color: #fff;
   --alert-danger-border: 1px solid #e74c3c;
   --alert-danger-background-color: #e74c3c;
 
-  --td-border-bottom: 1px solid #E1E1E1;
+  /* Tables */
+  --td-border-bottom: 1px solid #e1e1e1;
 
+  /* Utilities */
   --border-radius: 4px;
-  --hr: 1px solid #E1E1E1;
+  --hr: 1px solid #e1e1e1;
 
+  /* Cards */
   --card-shift: -2px;
-  --card-active-border: #8A8A8A;
-  --card-border: #E1E1E1;
-  --card-shadow: #E1E1E1;
+  --card-active-border: #8a8a8a;
+  --card-border: #e1e1e1;
+  --card-shadow: #e1e1e1;
   --card-anchor-color: #757575;
 }

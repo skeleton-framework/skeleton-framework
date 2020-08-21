@@ -2,7 +2,13 @@
   "name": "skeleton-framework",
   "description": "A simple responsive framework for mobile friendly development.",
   "main": "dist/skeleton.css",
-  "authors": "Gary DeLaney <gld1982ltd@gmail.com>",
+  "authors": [
+    "Dave Gamache",
+    "Gary DeLaney",
+    "Ben Hinchley",
+    "Nick Lorenson",
+    "Daniel Oltmanns"
+  ],
   "license": "MIT",
   "keywords": [
     "css",
