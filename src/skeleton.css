@@ -1,17 +1,21 @@
-/* Table of contents
-- Base Styles
-- Grid
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
+/*
+* Table of contents
+* -----------------
+* - Root Variables
+* - Base Styles
+* - Grid
+* - Typography
+* - Links
+* - Buttons
+* - Forms
+* - Lists
+* - Cards
+* - Code
+* - Tables
+* - Spacing
+* - Utilities
+* - Clearing
+* - Media Queries
 */
 
 @import "core/_root.css";

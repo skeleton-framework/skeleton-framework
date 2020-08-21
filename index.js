@@ -1,6 +1,4 @@
-/*jslint node: true */
-'use strict';
+const SkeletonPostCss = require('skeleton-postcss')
+const builder = new SkeletonPostCss()
 
-var build = require('skeleton-postcss');
-
-build('src/skeleton.css', 'dist/skeleton.css', 'dist/skeleton.min.css');
+builder.build('src/skeleton.css', 'css/skeleton.css', 'css/skeleton.min.css')

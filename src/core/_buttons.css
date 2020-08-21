@@ -19,10 +19,6 @@ input[type="button"] {
   border-radius: var(--border-radius);
   border: var(--button-border);
   cursor: pointer;
-  -webkit-transition: border 0.2s;
-  -moz-transition: border 0.2s;
-  -ms-transition: border 0.2s;
-  -o-transition: border 0.2s;
   transition: border 0.2s;
 }
 
@@ -73,10 +69,6 @@ input[type="button"].button-primary {
   border: var(--primary-button-border);
   color: var(--primary-button-font-color);
   background-color: var(--primary-button-background-color);
-  -webkit-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
-  -ms-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -124,10 +116,6 @@ input[type="button"].button-success {
   border: var(--success-button-border);
   color: var(--success-button-font-color);
   background-color: var(--success-button-background-color);
-  -webkit-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
-  -ms-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -175,10 +163,6 @@ input[type="button"].button-danger {
   border: var(--danger-button-border);
   color: var(--danger-button-font-color);
   background-color: var(--danger-button-background-color);
-  -webkit-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
-  -ms-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
